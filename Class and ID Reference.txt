@@ -1,0 +1,9 @@
+Class and ID Reference
+----------------------
+
+.codebox - preformatted box that contains the code
+.code-container - container that holds the code example
+.example-container - text to left of code example
+.example-container - Contains two <div>. One for text to the left and one for code examples to the right.
+.main-nav - <ul> primary navigation section
+.sub-nav - <ul> topics that display when main menu item is clicked on

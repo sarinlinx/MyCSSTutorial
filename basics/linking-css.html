@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Linking CSS to your page</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Linking CSS to you page</h1>
+        </header>
+
+        <p>There are 3 ways to link CSS to your page.</p>
+        <h2>External style sheet (Recommended)</h2>
+        <p>Linking from an external style sheet is the recommended way to load CSS into your website.</p>
+
+        <div class="example-container">
+            <div class="example-text">
+                <p>Link the external sheet within the &lt;head&gt; section of the HTML page.</p>
+                <p>type="text/css" isn't needed in HTML5</p>
+            </div>
+            <pre class="codebox">
+<span class="code-css">&lt;head&gt;
+&lt;link rel="stylesheet" type="text/css" href="mystyle.css"&gt;
+&lt;/head&gt;</span>
+</pre>
+        </div>
+        <!--end example-container-->
+
+
+
+        <h2>Internal style sheet</h2>
+        <div class="example-container">
+            <div class="example-text">
+                <p>You can add code to the &lt;head&gt; section within &lt;style&gt; tags.</p>
+                <p>However this can get difficult to read very quickly as the CSS grows.</p>
+            </div>
+            <!--end example-text-->
+            <pre class="codebox">
+<span class="code-css">&lt;head&gt;
+&lt;style&gt;
+body {
+  background-color: linen;
+}
+&lt;/style&gt;
+&lt;/head&gt;</span>
+</pre>
+
+        </div>
+        <!--end example-container-->
+
+
+
+
+
+        <h2>Inline style</h2>
+        <div class="example-container">
+            <div class="example-text">
+                <p>Inline styles are written directly into the body of the HTML page. Since there is no separation of content and style, this is an outdated method to add CSS and should never be used.</p>
+                </div>
+            <!--end example-text-->
+            <pre class="codebox">
+<span class="code-html">&lt;h1 style="color:blue;margin-left:30px;"&gt;This is a heading.&lt;/h1&gt;</pre>
+
+        </div>
+        <!--end example-container--></body>
+
+
+
+</html>

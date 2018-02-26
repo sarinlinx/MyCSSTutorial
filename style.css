@@ -1,0 +1,113 @@
+/* Main container */
+.container {
+  margin: auto;
+  width: 80%;
+  border: 3px solid #AFCBF1;
+  padding: 10px;
+  background: rgba(76, 175, 80, 0.1);
+}
+
+body {
+  background-image: url("images/blue-background.gif")
+}
+
+header {
+  text-align: center;
+}
+
+/*___________________________________________________
+Text Colors
+___________________________________________________*/
+.code-css {
+  color: yellow;
+}
+
+.code-html {
+  color: #ff9d39;
+}
+
+/*___________________________________________________
+Lists
+___________________________________________________*/
+/*Main <ul> list on navigation pages*/
+.main-nav {
+  margin: auto;
+  width: 40%;
+  list-style-type: none;
+}
+
+/* Primary list navigation topics
+This affects ALL <li> items*/
+.main-nav li {
+  border: 1px solid #ffa31f;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* sub-topics <ul> */
+.sub-nav {
+  list-style-type: none;
+}
+
+/* sub-topics <li> */
+.sub-nav li{
+  border: 1px solid #c85200;
+}
+
+
+
+/*___________________________________________________
+Code Examples
+___________________________________________________*/
+/* Main container for side by side text and code examples */
+.example-container {
+  background: rgba(125, 115, 115, 0.15);
+  /*border: 1px solid blue;*/
+  position: relative;
+  /*These two lines allow the .code-container child to
+  inherit the height of the parent*/
+  display: inline-block;
+  width: 100%;
+  min-height: 20px;
+}
+
+/* Text container for code examples */
+.example-text {
+  /*border: 1px solid green;*/
+  display: inline-block;
+  width: 48%;
+  padding: 10px 5px 10px 5px;
+  float: left;
+  }
+
+/* Container for box that contains the code example */
+/*.example-code {
+  border: 1px solid yellow;
+  width: 49%;
+  display: inline-block;
+  overflow: auto;
+  height: auto;
+  width: 50%;
+  text-align: left;
+  max-width: 940px;*/
+  /*These 3 lines allow the child to inherit the
+  height of the parent <div>*/
+/*  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+*/
+
+.codebox {
+  /*border: 1px solid white;*/
+  width: 48%;
+  overflow: auto;
+  background: #000;
+  padding: 10px 5px 10px 5px;
+}
+
+
+.clear {
+  clear: both;
+}
