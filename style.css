@@ -8,7 +8,8 @@
 }
 
 body {
-  background-image: url("images/blue-background.gif")
+  background-image: url("images/backgrounds/aqua-gradient.jpg")
+  /* background-repeat: repeat-y; */
 }
 
 header {
@@ -24,6 +25,10 @@ ___________________________________________________*/
 
 .code-html {
   color: #ff9d39;
+}
+
+.code-keyboard-command {
+  color: #d0d0d0;
 }
 
 /*___________________________________________________
@@ -81,24 +86,6 @@ ___________________________________________________*/
   float: left;
   }
 
-/* Container for box that contains the code example */
-/*.example-code {
-  border: 1px solid yellow;
-  width: 49%;
-  display: inline-block;
-  overflow: auto;
-  height: auto;
-  width: 50%;
-  text-align: left;
-  max-width: 940px;*/
-  /*These 3 lines allow the child to inherit the
-  height of the parent <div>*/
-/*  position: absolute;
-  top: 0;
-  bottom: 0;
-}
-*/
-
 .codebox {
   /*border: 1px solid white;*/
   width: 48%;
@@ -108,6 +95,44 @@ ___________________________________________________*/
 }
 
 
-.clear {
-  clear: both;
+
+
+/*___________________________________________________
+Note boxes
+___________________________________________________*/
+
+.alert-important, .alert-note, .alert-tip, .alert-warning {
+	position: relative;
+  padding: 15px;
+  border: 1px solid #DCDCDC;
+  height: auto;
+  min-height: 90px;
+  display: table;
+  margin: 15px 0 15px 0;
+  background-color: rgba(125, 115, 115, 0.15);
+}
+
+.alert-content {
+  margin-left: 80px;
+  line-height: 22px;
+  font-size: 95%;
+  padding-left: 20px;
+  border-left: 1px solid #DCDCDC;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.alert-content ul, .alert-content ol {
+  margin-bottom: 0;
+}
+
+.alert-content li {
+  padding: 0;
+}
+
+.alert-icon {
+  display: table-cell;
+  width: 8%;
+  min-width: 75px;
+  vertical-align: middle;
 }

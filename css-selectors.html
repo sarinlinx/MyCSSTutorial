@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>CSS Selectors</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+<a href="index.html">Home page</a>
+        <header>
+            <h1>CSS selectors</h1>
+<p>This page explains what CSS selectors are and how to use them.</p>
+        </header>
+
+        <p>A CSS selector locates and HTML element and adds styles to it.</p>
+        <h2>Syntax</h2>
+        <p>The basic syntax is: <strong>SELECTOR { PROPERTY: VALUE }</strong></p>
+        <img src="images/css-syntax.png"/>
+
+<p>CSS can locate HTML elements based on their:
+  <ul>
+    <li>element name</li>
+    <li>id</li>
+    <li>class</li>
+    <li>attribute</li>
+</ul>
+
+<h2>The 'Element' selector</h2>
+<p>The 'Element' selector locates an HTML element based on the element name. Examples include:</p>
+
+<ul>
+  <li>body</li>
+  <li>h1</li>
+  <li>p</li>
+</ul>
+
+<p>Here's an example of a paragraph 'Element' selector.</p>
+
+<div class="example-container">
+    <div class="example-text">
+        <p>This Paragraph selector would locate all paragraphs in the document.</p>
+    </div>
+    <pre class="codebox">
+<span class="code-css">p {
+  color: blue;
+}</span>
+</pre>
+</div>
+<!--end example-container-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2>The 'ID' selector</h2>
+<p>The 'ID' selector locates an HTML element based on a specific ID value given to that element. For example:</p>
+<div class="example-container">
+    <div class="example-text">
+        <p>Assign a paragraph the 'id' of 'intro'.</p>
+    </div>
+    <pre class="codebox"><span class="code-html">&lt;p id="intro"&gt;words words words&lt;/p&gt;</span></pre>
+</div>
+<!--end example-container-->
+
+<div class="alert alert-note">
+  <div class="alert-icon">
+    <img src="images/note-icon.png" width="60" height="60">
+  </div>
+  <div class="alert-content">
+    <p>You can either use single quotes or double quotes around the 'id' name.</p>
+</div>
+</div>
