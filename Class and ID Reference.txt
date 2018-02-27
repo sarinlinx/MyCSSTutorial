@@ -7,3 +7,13 @@ Class and ID Reference
 .example-container - Contains two <div>. One for text to the left and one for code examples to the right.
 .main-nav - <ul> primary navigation section
 .sub-nav - <ul> topics that display when main menu item is clicked on
+
+
+Common code to cut & paste
+--------------------------
+<div class="example-container">
+    <div class="example-text">
+        <p>Test goes here</p>
+</div>
+  <pre class="codebox"><span class="code-html">CODE Here</span></pre>
+</div>

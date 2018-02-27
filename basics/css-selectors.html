@@ -1,0 +1,242 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>CSS Selectors</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <a href="../index.html">Home page</a>
+        <header>
+            <h1>CSS selectors</h1>
+            <p>This page explains what CSS selectors are and how to use them.</p>
+        </header>
+
+        <p>A CSS selector locates and HTML element and adds styles to it.</p>
+        <h1 class="heading-emphasis">Syntax</h1>
+        <p>The basic syntax is: <strong>SELECTOR { PROPERTY: VALUE }</strong></p>
+        <img src="../images/css-syntax.png" />
+
+        <p>CSS can locate HTML elements based on their:
+            <ul>
+                <li>element name</li>
+                <li>id</li>
+                <li>class</li>
+                <li>attribute</li>
+            </ul>
+
+            <h1 class="heading-emphasis">The 'Element' selector</h1>
+            <p>The 'Element' selector locates an HTML element based on the element name. Examples include:</p>
+
+            <ul>
+                <li>body</li>
+                <li>h1</li>
+                <li>p</li>
+            </ul>
+
+            <p>Here's an example of a paragraph 'Element' selector.</p>
+
+            <div class="example-container">
+                <div class="example-text">
+                    <p>This Paragraph selector would locate all paragraphs in the document.</p>
+                </div>
+                <pre class="codebox">
+<span class="code-css">p {
+  color: blue;
+}</span>
+</pre>
+            </div>
+            <!--end example-container-->
+
+
+
+
+
+
+
+
+
+
+            <h1 class="heading-emphasis">The 'ID' selector</h1>
+            <p>The 'ID' selector locates an HTML element based on a specific ID value given to that element. For example:</p>
+            <div class="example-container">
+                <div class="example-text">
+                    <p>Assign a paragraph the 'id' of 'intro'.</p>
+                </div>
+                <pre class="codebox"><span class="code-html">&lt;p id="intro"&gt;words words words&lt;/p&gt;</span></pre>
+            </div>
+            <!--end example-container-->
+            <div class="example-container">
+                <div class="example-text">
+                    <p>You can then target it in your CSS file with a #.</p>
+                </div>
+                <pre class="codebox"><span class="code-css">#intro {
+  background-color: blue;
+}    </span></pre>
+            </div>
+            <div class="alert alert-note">
+                <div class="alert-icon">
+                    <img src="../images/note-icon.png" width="60" height="60">
+                </div>
+                <div class="alert-content">
+                    <p>You can either use single quotes or double quotes around the 'id' name.</p>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <h1 class="heading-emphasis">The 'Class' selector</h1>
+            <p>The 'Class' selector locates an HTML element based on a specific Class name value given to that element. For example:</p>
+            <div class="example-container">
+                <div class="example-text">
+                    <p>Assign a paragraph the 'Class' of 'center'.</p>
+                </div>
+                <pre class="codebox"><span class="code-html">&lt;p class="center"&gt;words words words&lt;/p&gt;</span></pre>
+            </div>
+            <!--end example-container-->
+
+
+            <div class="example-container">
+                <div class="example-text">
+                    <p>You can then target it in your CSS file with a period.</p>
+                </div>
+                <pre class="codebox"><span class="code-css">.center {
+  background-color: blue;
+}    </span></pre>
+            </div>
+
+            <div class="alert alert-note">
+                <div class="alert-icon">
+                    <img src="../images/note-icon.png" width="60" height="60">
+                </div>
+                <div class="alert-content">
+                    <p>You can either use single quotes or double quotes around the 'Class' name.</p>
+                </div>
+            </div>
+
+
+
+
+
+            <h1 class="heading-emphasis">Grouping selectors together</h1>
+            <p>You can write a single declaration for multiple selectors are once. Just separate them with a comma.</p>
+            <div class="example-container">
+                <div class="example-text">
+                    <p>This CSS applies to h1, h2, and p tags.</p>
+                </div>
+                <pre class="codebox"><span class="code-css">h1, h2, p {
+text-align: center;
+color: red;
+}</span></pre>
+            </div>
+            <!--end example-container-->
+
+
+
+            <h1 class="heading-emphasis">Specifying element selectors</h1>
+            <p>You can specifically assign a class to only one HTML element using a period to separate them.</p>
+            <div class="example-container">
+                <div class="example-text">
+                    <p>This CSS applies only to h1 elements with a class of 'center'.</p>
+                </div>
+                <pre class="codebox"><span class="code-css">h1.center {
+  text-align: center;
+}</span></pre>
+            </div>
+            <!--end example-container-->
+
+
+
+
+            <h1 class="heading-emphasis">Attribute selectors</h1>
+            <p>The attribute selector locates elements with a specified attribute. Here are a few examples.</p>
+
+            <h2 class="heading-emphasis">Example using the 'target' attribute</h2>
+            <div class="example-container">
+                <div class="example-text">
+                    <a href="https://www.w3schools.com/tags/att_target.asp">The target attribute</a>
+                </div>
+                <pre class="codebox"><span class="code-html">Make sure to &lt;a href="#" <span class="white">target</span>="_blank"&gt;Click Here&lt;/a&gt;</span></pre>
+
+                <div class="example-text">
+                    <p>Target the attribute with CSS.</p>
+                </div>
+                <pre class="codebox"><span class="code-css">[target] {
+  color: yellow;
+}</span></pre>
+
+                <div class="example-text">
+                    <p>This would make the entire link text yellow.</p>
+                </div>
+                <pre class="codebox"><span class="white">Make sure to </span><span class="yellow">Click Here</span></span></pre>
+
+            </div>
+
+            <h2 class="heading-emphasis">Example using the 'type' attribute</h2>
+            <div class="example-container">
+                <div class="example-text">
+                    <a href="https://www.w3schools.com/tags/att_type.asp">The type attribute</a>
+                </div>
+                <pre class="codebox"><span class="code-html">&lt;button <span class="white">type</span>="button"&gt;Click Me!&lt;/button&gt;</a></span></pre>
+
+
+                <div class="example-text">
+                    <p>Target the attribute with CSS.</p>
+                </div>
+                <pre class="codebox"><span class="code-css">[type] {
+  border-color: green;
+}</span></pre>
+
+                <div class="example-text">
+                    <p>The result would add a green border to the button:</p>
+                </div>
+                <pre class="codebox"><button class="border-green" type="button">Click Me!</button></span></pre>
+            </div>
+
+            <p>A full list can be found here:</p>
+            <ul>
+                <li><a href="https://www.w3schools.com/tags/ref_attributes.asp">HTML attributes</a></li>
+            </ul>
+
+            <h2 class="heading-emphasis">Attribute and value selector</h2>
+            <div class="example-container">
+                <div class="example-text">
+                    This selects the 'target' attribute <strong>only</strong> if the value is '_blank'.</a>
+                </div>
+                <pre class="codebox"><span class="code-html">Make sure you &lt;a href="#" <span class="white">target="_blank"</span>&gt;Click Here&lt;/a&gt;</span>
+<span class="code-html">You should also &lt;a href="#"&gt;Click Here&lt;/a&gt;</span></pre>
+
+                <div class="example-text">
+                    <p>Target the attribute with CSS.</p>
+                </div>
+                <pre class="codebox"><span class="code-css">[target=_blank] {
+  color: green;
+}</span></pre>
+
+                <div class="example-text">
+                    <p>This would make only the link with a target of _blank green.</p>
+                </div>
+                <pre class="codebox"><span class="white">Make sure you </span><span class="green">Click Here</span></span>
+<span class="white">Make sure you also Click Here</span></span></pre>
+
+            </div>
+
+
+
+<h2 class="heading-emphasis">Descendant selectors</h2>
+            <div class="example-container">
+                <div class="example-text">
+                    <span class="red">CONTINUE HERE</span>
+                </div>
+                <pre class="codebox"><span class="code-html">asdf</span></pre>
