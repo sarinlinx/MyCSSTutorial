@@ -49,6 +49,11 @@ ___________________________________________________*/
   color: #d0d0d0;
 }
 
+.blue {
+  color: blue;
+  font-weight: bold;
+}
+
 .green {
   color: green;
   font-weight: bold;

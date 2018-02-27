@@ -233,10 +233,167 @@ color: red;
             </div>
 
 
-
-<h2 class="heading-emphasis">Descendant selectors</h2>
+            <h1 class="heading-emphasis">CSS Combinators</h1>
+            <p>Combinators explain the relationship between the selectors. Between the selectors, you can add a combinator.</p>
+            <p>Examples of combinators:</p>
+            <ul>
+                <li>descendant selector (space)</li>
+                <li>child selector (>)</li>
+                <li>adjacent sibling selector (+)</li>
+                <li>general sibling selector (~)</li>
+            </ul>
+            <h2 class="heading-emphasis">Descendant selectors</h2>
+            <p>Descendant selectors add a space between the selectors. This makes it possible to match all elements that are descendants of a specified element.</p>
             <div class="example-container">
                 <div class="example-text">
-                    <span class="red">CONTINUE HERE</span>
+                    This example looks inside all &lt;div&gt; elements and selects any &lt;p&gt; elements inside.
                 </div>
-                <pre class="codebox"><span class="code-html">asdf</span></pre>
+                <pre class="codebox"><span class="code-css">div p {
+  background-color: yellow;
+}</span></pre>
+            </div>
+            <!--close example-container-->
+
+
+            <div class="example-container">
+                <div class="example-text">
+                    You can also skip levels. This example looks inside all &lt;ancestor&gt; elements and selects any &lt;descendant&gt; elements inside.
+                </div>
+                <pre class="codebox"><span class="code-html">&lt;div class="ancestor"&gt;
+  &lt;div class="parent"&gt;
+    &lt;div class="child"&gt;<span class="white">This is not styled</span>&lt;/div&gt;
+    &lt;div class="descendant"&gt;<span class="white">This IS styled</span>&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+                <div class="example-text">
+                    CSS to select the descendant.
+                </div>
+                <pre class="codebox">
+<span class="code-css">.ancestor .descendant {
+  color: blue;
+}</pre>
+
+                <div class="example-text">
+                    Result:
+                </div>
+                <pre class="codebox"><span class="white">This is not styled</span>
+<span class="blue">This IS styled</span></pre>
+            </div>
+            <!--End example-container-->
+
+            <div class="example-container">
+                <div class="example-text">
+                    Here is another example that looks inside any &lt;section&gt; elements for &lt;a&gt; elements.
+                </div>
+                <pre class="codebox"><span class="code-html">&lt;section&gt;
+  &lt;div class="example"&gt;
+    &lt;p&gt;Link goes here &lt;a href="#"&gt;link&lt;/a&gt;.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</pre>
+
+                <div class="example-text">
+                    CSS to select the anchor tag within the section tag.
+                </div>
+                <pre class="codebox">
+<span class="code-css">section a {
+  /*styles*/
+}</pre>
+
+
+            </div>
+            <!--End example-container-->
+
+            <h2 class="heading-emphasis">Child selectors</h2>
+            <p>Select ONLY the child element using > symbol between parent and child elements.</p>
+            <div class="example-container">
+                <div class="example-text">
+                    This example ONLY looks in the &lt;section&gt; element for a direct &lt;a&gt; element.
+                </div>
+                <pre class="codebox"><span class="code-html">&lt;section&gt;
+  &lt;a href="#"&gt;child 1&lt;/a&gt;
+  &lt;a href="#"&gt;child 2&lt;/a&gt;
+    &lt;div&gt;
+        &lt;a href="#"&gt;descendant&lt;/a&gt;
+    &lt;/div>
+&lt;/section&gt;</span></pre>
+
+                <div class="example-text">
+                    CSS to select the first two anchor tag children inside the section tag. The 3rd isn't a child so it's not select.
+
+
+                </div>
+                <pre class="codebox">
+<span class="code-css">section > a {
+  color: green;
+}</pre>
+
+                <div class="example-text">
+                    Result:
+                </div>
+                <pre class="codebox"><span class="green">child 1</span>
+<span class="green">child 2</span>
+<span class="blue"><span class="white">descendant</span></pre>
+            </div>
+            <!--close example-container-->
+
+            <h2 class="heading-emphasis">Adjacent Sibling Selectors</h2>
+            <p>Adjacent Sibling Selectors only select the element immediately following a specified element. They are separated with a + symbol.</p>
+            <div class="example-container">
+                <div class="example-text">
+                    This example ONLY selects the paragraph element directly after an &lt;h2&gt; element.
+                </div>
+                <pre class="codebox"><span class="code-html">&lt;p>Paragraph 1&lt;/p&gt;
+
+&lt;h2&gt;Heading&lt;/h2&gt;
+&lt;p&gt;Paragraph 2&lt;/p&gt;
+&lt;p&gt;Paragraph 3&lt;/p&gt;</span></pre>
+
+                <div class="example-text">
+                    CSS to select the paragraph immediately following the h2 tag. The 3rd doesn't immediately follow so it's not selected.
+                </div>
+                <pre class="codebox">
+<span class="code-css">h2 + p {
+ color: blue;
+}</pre>
+
+                <div class="example-text">
+                    Result:
+                </div>
+                <pre class="codebox"><span class="white">Paragraph 1</span>
+<span class="white">Heading</span>
+<span class="blue">Paragraph 2</span>
+<span class="white">Paragraph 3</span>
+</span></pre>
+            </div>
+            <!--close example-container-->
+
+           <h2 class="heading-emphasis">General Sibling Selector</h2>
+            <p>General Sibling Selectors select all specified elements following a specified element. They are separated with a ~ symbol.</p>
+            <div class="example-container">
+                <div class="example-text">
+                    This example selects all paragraphs following the &lt;div&gt; element.
+                </div>
+                <pre class="codebox"><span class="code-html">&lt;p&gt;Paragraph 1.&lt;/p&gt;
+&lt;div&gt;
+  &lt;p&gt;Paragraph 2.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Paragraph 3.&lt;/p&gt;
+&lt;p&gt;Paragraph 4.&lt;/p&gt;</pre>
+
+                <div class="example-text">
+                    CSS to select only the paragraphs that follow the div tag.
+                </div>
+                <pre class="codebox"><span class="code-css">div ~ p {
+  color: red;
+}</pre>
+
+                <div class="example-text">
+                    Result:
+                </div>
+                <pre class="codebox"><span class="white">Paragraph 1</span>
+<span class="white">Paragraph 2</span>
+<span class="red">Paragraph 3</span>
+<span class="red">Paragraph 4</span></span></pre>
+            </div>
+            <!--close example-container-->
