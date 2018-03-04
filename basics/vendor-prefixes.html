@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Linking CSS to your page</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <a href="../index.html">Home page</a>
+        <header>
+            <h1>Vendor prefixes</h1>
+        </header>
+
+        <p>Each browser uses its own prefix applied to the beginning of the property name.</p>
+<p>Vendor prefixes are used to add browser support for new or experimental features that are not fully standardized across browsers yet.</p>
+
+        <h2 class="heading-emphasis">Prefixes</h2>
+
+        <div class="example-container">
+            <div class="example-text">
+                <p>Android, iOS, Chrome, Safari</p>
+            </div>
+            <pre class="codebox"><span class="cyan">-webkit-</span></pre></div>
+        <!--end example-container-->
+
+        <div class="example-container">
+            <div class="example-text">
+                <p>Firefox</p>
+            </div>
+            <pre class="codebox"><span class="cyan">-moz-</span></pre></div>
+        <!--end example-container-->
+
+        <div class="example-container">
+            <div class="example-text">
+                <p>Internet Explorer</p>
+            </div>
+            <pre class="codebox"><span class="cyan">-ms-</span></pre></div>
+        <!--end example-container-->
+
+        <div class="example-container">
+            <div class="example-text">
+                <p>Opera</p>
+            </div>
+            <pre class="codebox"><span class="cyan">-o-</span></pre></div>
+        <!--end example-container-->
+
+<h2 class="heading-emphasis">How to use Vendor Prefixes?</h2>
+<p>CSS is rendered top to bottom. Because of this, you should list the Vendor Prefix versions of your code first.</p>
+<p>Only after the Vendor Prefix lines have been written should you add the standard CSS property.</p>
+<p>Browsers will read the first line and ignore it if it's not the prefix for that specific browser.</p>
+
+</body>
+</html>

@@ -17,3 +17,11 @@ Common code to cut & paste
 </div>
   <pre class="codebox"><span class="code-html">CODE Here</span></pre>
 </div>
+
+
+<div class="alert alert-note">
+    <div class="alert-icon">
+        <img src="../images/note-icon.png" width="60" height="60">
+    </div>
+    <div class="alert-content">
+        <p>

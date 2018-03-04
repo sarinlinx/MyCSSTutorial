@@ -54,6 +54,10 @@ ___________________________________________________*/
   font-weight: bold;
 }
 
+.cyan {
+  color: cyan;
+}
+
 .green {
   color: green;
   font-weight: bold;
@@ -178,4 +182,37 @@ ___________________________________________________*/
   width: 8%;
   min-width: 75px;
   vertical-align: middle;
+}
+
+
+
+/*___________________________________________________
+Examples in preformatted boxes
+___________________________________________________*/
+/* background transparency example */
+.image-bg {
+  background: url(images/backgrounds/examples/white-bg.jpg)
+}
+
+.rgba-transparency {
+    background: rgba(199, 21, 133, .25);
+}
+
+/* gradient color over image */
+.linear-gradient {
+  height: 40px;
+  background: linear-gradient(red, green);
+}
+
+.linear-gradient-3colors {
+  height: 40px;
+  background: linear-gradient(red, yellow, green);
+}
+
+.transparent-linear-gradient {
+  height: 40px;
+  background: linear-gradient(rgba(255, 0, 0, 0.35),  /*red*/
+                             rgba(255, 255, 0, 0.35), /*yellow*/
+                             rgba(0, 0, 255, 0.35)),  /*blue*/
+url(images/backgrounds/examples/white-bg.jpg);
 }
