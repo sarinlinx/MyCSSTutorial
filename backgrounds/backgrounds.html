@@ -42,12 +42,12 @@
   background-image: url("paper.gif");
 }</pre>
 
-    <div class="example-text">
-        <p>To specify more than one image, separate the URLs with a comma.</p>
-    </div>
-    <pre class="codebox"><span class="code-css">body {
+            <div class="example-text">
+                <p>To specify more than one image, separate the URLs with a comma.</p>
+            </div>
+            <pre class="codebox"><span class="code-css">body {
   background-image: url("image1.png"),
-  url(image2.png);
+  url("image2.png");
 }</pre>
         </div>
         <!--End example-container-->
@@ -65,27 +65,21 @@
 &lt;/div&gt;</span>
 
 <span class="code-css">.image-bg {
-  background: url(images/note.jpg)
+  background: url("images/note.jpg")
 }
 
 .rgba-transparency {
   background: rgba(199, 21, 133, .25);
 }</span></pre>
 
-<div class="example-text">
-    <p>The result will be a transparent layer over top the current background.</p>
-</div>
-<pre class="codebox"><div class="image-bg">
+            <div class="example-text">
+                <p>The result will be a transparent layer over top the current background.</p>
+            </div>
+            <pre class="codebox"><div class="image-bg">
     <p class="rgba-transparency">Testing to see how the transparency works.</p>
   </div></pre>
-</div>
+        </div>
         <!--End example-container-->
-
-
-
-
-
-
 
         <h2 class="heading-emphasis">Linear gradient background</h2>
         <div class="example-container">
@@ -100,16 +94,16 @@
 }</span></pre>
 
 
-    <div class="example-text">
-        <p>The result will be a transparent layer over top the current background.</p>
-    </div>
-    <pre class="codebox"><p class="linear-gradient">Testing to see how the linear gradient works.</p></pre>
+            <div class="example-text">
+                <p>The result will be a transparent layer over top the current background.</p>
+            </div>
+            <pre class="codebox"><p class="linear-gradient">Testing to see how the linear gradient works.</p></pre>
 
 
-    <div class="example-text">
-        <p>You can also add a 3rd color.</p>
-    </div>
-    <pre class="codebox"><span class="code-html">&lt;p class="linear-gradient-3colors"&gt;Testing to see how the linear gradient works.&lt;/p&gt;
+            <div class="example-text">
+                <p>You can also add a 3rd color.</p>
+            </div>
+            <pre class="codebox"><span class="code-html">&lt;p class="linear-gradient-3colors"&gt;Testing to see how the linear gradient works.&lt;/p&gt;
 </span>
 
 <span class="code-css">.linear-gradient-3colors {
@@ -117,14 +111,12 @@ background: linear-gradient-3colors(red, yellow, green),
 }</span></pre>
 
 
-<div class="example-text">
-<p>The result will be a transparent layer over top the current background.</p>
-</div>
-<pre class="codebox"><p class="linear-gradient-3colors">Testing to see how the linear gradient works.</p></pre>
+            <div class="example-text">
+                <p>The result will be a transparent layer over top the current background.</p>
+            </div>
+            <pre class="codebox"><p class="linear-gradient-3colors">Testing to see how the linear gradient works.</p></pre>
 
-  </div>
-
-
+        </div>
 
 
 
@@ -135,23 +127,13 @@ background: linear-gradient-3colors(red, yellow, green),
 
 
 
-
-
-
-
-
-
-
-
-
-
-  <h2 class="heading-emphasis">Transparent linear gradient over a background image</h2>
-  <div class="example-container">
-      <div class="example-text">
-          <p>This shows how to add a transparent linear gradient of 3 colors over a background image.</p>
-          <p><strong>The linear-gradient values must come first.</strong></p>
-      </div>
-      <pre class="codebox"><span class="code-html">&lt;div class="image-bg"&gt;
+        <h2 class="heading-emphasis">Transparent linear gradient over a background image</h2>
+        <div class="example-container">
+            <div class="example-text">
+                <p>This shows how to add a transparent linear gradient of 3 colors over a background image.</p>
+                <p><strong>The linear-gradient values must come first.</strong></p>
+            </div>
+            <pre class="codebox"><span class="code-html">&lt;div class="image-bg"&gt;
   &lt;p class="transparent-linear-gradient"&gt;Transparent linear gradient over an background image.&lt;/p&gt;
 &lt;div&gt;
 </span>
@@ -161,18 +143,179 @@ background: linear-gradient-3colors(red, yellow, green),
   background: linear-gradient(rgba(255, 0, 0, 0.35),  /*red*/
   rgba(255, 255, 0, 0.35), /*yellow*/
   rgba(0, 0, 255, 0.35)),  /*blue*/
-  url(images/backgrounds/examples/white-bg.jpg);
+  url("images/backgrounds/examples/white-bg.jpg");
 }</span></pre>
 
 
-<div class="example-text">
-<p>The result will be a transparent gradient over a background image.</p>
-</div>
-<pre class="codebox"><div class="image-bg">
+            <div class="example-text">
+                <p>The result will be a transparent gradient over a background image.</p>
+            </div>
+            <pre class="codebox"><div class="image-bg">
 <p class="transparent-linear-gradient">Transparent linear gradient over an background image.</p>
-<div></pre>
+</div></pre>
+        </div>
 
 
+
+
+
+
+
+
+
+
+        <h1 class="heading-emphasis">Background repeat</h1>
+        <p>The following shows different ways to repeat the background image.</p>
+
+        <div class="example-container">
+            <div class="example-text">
+                <p>By default, the background-image property repeats an image both horizontally and vertically.</p>
+            </div>
+            <pre class="codebox"><div class="image-bg-repeat">
+
+
+
+
+</div></pre>
+        </div>
+
+
+        <h2 class="heading-emphasis">Repeat the image on the x axis.</h2>
+        <div class="example-container">
+            <div class="example-text">
+                <p>This repeats the image horizontally.</p>
+            </div>
+            <pre class="codebox"><span class="code-css">body {
+  background: url("../images/backgrounds/examples/purple-dot.jpg");
+  background-repeat: repeat-x;
+}</pre>
+
+            <div class="example-text">
+                <p>The image is repeated horizontally only. If the image has a short height, anything below is inherits its background color.</p>
+            </div>
+            <pre class="codebox"><div class="image-bg-repeat-x">
+
+
+
+
+</div></pre>
+        </div>
+        <!--End example-container-->
+
+        <h2 class="heading-emphasis">Repeat the image on the y axis.</h2>
+        <div class="example-container">
+            <div class="example-text">
+                <p>This repeats the image vertically.</p>
+            </div>
+            <pre class="codebox"><span class="code-css">body {
+  background: url("../images/backgrounds/examples/purple-dot.jpg");
+  background-repeat: repeat-y;
+}</pre>
+
+            <div class="example-text">
+                <p>The image is repeated horizontally only. If the image has a short width, anything to the right inherits its background color.</p>
+            </div>
+            <pre class="codebox"><div class="image-bg-repeat-y">
+
+
+
+
+</div></pre>
+        </div>
+        <!--End example-container-->
+
+        <h2 class="heading-emphasis">Do not repeat the image.</h2>
+        <div class="example-container">
+            <div class="example-text">
+                <p>This forces the image to not repeat at all.</p>
+            </div>
+            <pre class="codebox"><span class="code-css">body {
+  background: url("../images/backgrounds/examples/purple-dot.jpg");
+  background-repeat: no-repeat;
+}</pre>
+
+            <div class="example-text">
+                <p>The result is that the image shows once in the top left corner.</p>
+            </div>
+            <pre class="codebox"><div class="image-bg-no-repeat">
+
+
+
+
+</div></pre>
+        </div>
+        <!--End example-container-->
+
+
+
+
+
+
+
+
+
+
+        <h1 class="heading-emphasis">Background attachement</h1>
+        <p>By default, the background image will not move with the page.</p>
+        <p>The background attachment property allows you to control what happens to the background image as the page is navigated.</p>
+
+        <h2 class="heading-emphasis">Fixed — Fix the image to the page as you scroll.</h2>
+        <div class="example-container">
+            <div class="example-text">
+                <p>This causes the image to be fixed to the top left of the page. As the user scrolls, the image always remains on the top left and never goes out of sight.</p>
+            </div>
+            <pre class="codebox"><span class="code-css">body {
+  background: url("../images/backgrounds/examples/purple-dot.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}</pre>
+
+            <div class="alert alert-note">
+                <div class="alert-icon">
+                    <img src="../images/note-icon.png" width="60" height="60">
+                </div>
+                <div class="alert-content">
+                    <p>This only works on the body element. If you used 'fixed' for any other element, the image will disappear. This is because 'fixed' is relative to the viewport, not the element you're adding the code to.</p>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+        <h2 class="heading-emphasis">Scroll — Allow the image to scroll with the page.</h2>
+        <div class="example-container">
+            <div class="example-text">
+                <p>This causes the image to scroll with the page. As the user scrolls, the image scrolls also. This is the default behavior.</p>
+            </div>
+            <pre class="codebox"><span class="code-css">body {
+background: url("../images/backgrounds/examples/purple-dot.jpg");
+background-repeat: no-repeat;
+background-attachment: scroll;
+}</pre>
+
+            <!--End main container-->
+
+            <!-- <div class="example-container"> -->
+            <div class="example-text">
+                <p>This causes the image to scroll with the page. As the user scrolls, the image scrolls also. This is the default behavior.</p>
+            </div>
+            <pre class="codebox-fixed-height"><div class="image-bg-scroll"><span class="white">Testing Testing Testing
+Testing Testing Testing
+Testing Testing Testing
+Testing Testing Testing
+Testing Testing Testing
+Testing Testing Testing
+Testing Testing Testing
+Testing Testing Testing</span></div>
+</pre>
+        </div>
+        <!--End example-container-->
+
+    </div>
+    <!--End example-container-->
 
 
 </body>

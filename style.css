@@ -9,7 +9,6 @@
 
 body {
   background-image: url("images/backgrounds/aqua-gradient.jpg")
-  /* background-repeat: repeat-y; */
 }
 
 header {
@@ -141,7 +140,14 @@ ___________________________________________________*/
   padding: 10px 5px 10px 5px;
 }
 
-
+.codebox-fixed-height {
+  /*border: 1px solid white;*/
+  width: 48%;
+  height: 50px;
+  overflow: auto;
+  background: #000;
+  padding: 10px 5px 10px 5px;
+}
 
 
 /*___________________________________________________
@@ -191,7 +197,7 @@ Examples in preformatted boxes
 ___________________________________________________*/
 /* background transparency example */
 .image-bg {
-  background: url(images/backgrounds/examples/white-bg.jpg)
+  background: url("images/backgrounds/examples/white-bg.jpg");
 }
 
 .rgba-transparency {
@@ -214,5 +220,30 @@ ___________________________________________________*/
   background: linear-gradient(rgba(255, 0, 0, 0.35),  /*red*/
                              rgba(255, 255, 0, 0.35), /*yellow*/
                              rgba(0, 0, 255, 0.35)),  /*blue*/
-url(images/backgrounds/examples/white-bg.jpg);
+url("images/backgrounds/examples/white-bg.jpg");
+}
+
+.image-bg-repeat {
+  background: url("images/backgrounds/examples/purple-dot.jpg");
+}
+
+.image-bg-repeat-x {
+  background: url("images/backgrounds/examples/purple-dot.jpg");
+  background-repeat: repeat-x;
+}
+
+.image-bg-repeat-y {
+  background: url("images/backgrounds/examples/purple-dot.jpg");
+  background-repeat: repeat-y;
+}
+
+.image-bg-no-repeat {
+  background: url("images/backgrounds/examples/purple-dot.jpg");
+  background-repeat: no-repeat;
+}
+
+.image-bg-scroll {
+  background: url("images/backgrounds/examples/purple-dot.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
 }
