@@ -43,12 +43,15 @@
 }</pre>
 
             <div class="example-text">
-                <p>To specify more than one image, separate the URLs with a comma.</p>
+                <p>To specify multiple images, separate the URLs with a comma.</p>
             </div>
             <pre class="codebox"><span class="code-css">body {
   background-image: url("image1.png"),
   url("image2.png");
 }</pre>
+
+
+
         </div>
         <!--End example-container-->
 
@@ -296,8 +299,6 @@ background-repeat: no-repeat;
 background-attachment: scroll;
 }</pre>
 
-            <!--End main container-->
-
             <!-- <div class="example-container"> -->
             <div class="example-text">
                 <p>This causes the image to scroll with the page. As the user scrolls, the image scrolls also. This is the default behavior.</p>
@@ -313,11 +314,355 @@ Testing Testing Testing</span></div>
 </pre>
         </div>
         <!--End example-container-->
+        <h2 class="heading-emphasis"><span class="red">Local — How is this different from Scroll?.</span></h2>
+
+
+
+
+
+
+
+
+
+
+        <h1 class="heading-emphasis">Background Position</h1>
+        <p>Position the background image to a specific area of the page.</p>
+
+
+        <h2 class="heading-emphasis">Using positional words</h2>
+        <div class="example-container">
+            <div class="example-text">
+                <p>You can use words like 'top right' to position the background.</p>
+            </div>
+            <pre class="codebox"><span class="code-css">body {
+background: url("../images/backgrounds/examples/purple-dot.jpg");
+background-repeat: no-repeat;
+background-position: top right;
+}</pre>
+
+
+            <div class="example-text">
+                <p>The result will be the image on the top right.</p>
+            </div>
+            <pre class="codebox"><div class="image-bg-position-words"><span class="white">Testing Testing Testing
+Testing Testing Testing
+Testing Testing Testing
+Testing Testing Testing
+Testing Testing Testing
+Testing Testing Testing
+Testing Testing Testing
+Testing Testing Testing</span></div></pre>
+
+
+            <div class="example-text">
+                <p>Other options are:
+                    <div class="alert alert-note">
+                        <div class="alert-icon">
+                            <img src="../images/note-icon.png" width="60" height="60">
+                        </div>
+                        <div class="alert-content">
+                            <p>If you only specify one keyword, the other value will be "center"</p>
+                        </div>
+                    </div>
+            </div>
+            <pre class="codebox"><span class="white">left top
+left center
+left bottom
+right top
+right center
+right bottom
+center top
+center center
+center bottom</span></pre>
+        </div>
+
+        <h2 class="heading-emphasis">Using % values</h2>
+        <div class="example-container">
+            <div class="example-text">
+                <p>You can use % values to position the background.</p>
+                <p>The first value is the horizontal position and the second value is the vertical. The top left corner is 0% 0%. The right bottom corner is 100% 100%.</p>
+                <p>If you only specify one value, the other value will be 50%. Default value is: 0% 0%.</p>
+            </div>
+            <pre class="codebox"><span class="code-css">body {
+  background: url("../images/backgrounds/examples/purple-dot.jpg");
+  background-repeat: no-repeat;
+  background-position: 20% 10%;
+}
+
+
+
+
+
+
+
+
+</pre>
+            <div class="example-text">
+                <p>This example moves the image 20% to the right and 10% down on the page.</p>
+            </div>
+            <pre class="codebox"><div class="image-bg-position-percent"><span class="white">Testing Testing Testing
+Testing Testing Testing
+Testing Testing Testing
+Testing Testing Testing
+Testing Testing Testing
+Testing Testing Testing
+Testing Testing Testing
+Testing Testing Testing</span></div></pre>
+
+
+        </div>
+        <!--End example-container-->
+
+        <h2 class="heading-emphasis">Using CSS units</h2>
+        <div class="example-container">
+            <div class="example-text">
+                <p>You can position using any CSS unit like pixels.</p>
+                <p>If you only specify one value, the other value will be 50%. Default value is: 0% 0%.</p>
+            </div>
+            <pre class="codebox"><span class="code-css">body {
+  background: url("../images/backgrounds/examples/purple-dot.jpg");
+  background-repeat: no-repeat;
+  background-position: 20px 50px;
+}
+
+
+
+
+
+
+
+
+</pre>
+            <div class="example-text">
+                <p>This example moves the image 20 pixels to the right and 50 pixels down on the page.</p>
+            </div>
+            <pre class="codebox"><div class="image-bg-position-pixels"><span class="white">Testing Testing Testing
+Testing Testing Testing
+Testing Testing Testing
+Testing Testing Testing
+Testing Testing Testing
+Testing Testing Testing
+Testing Testing Testing
+Testing Testing Testing</span></div></pre>
+
+
+        </div>
+        <!--End example-container-->
+
+
+
+
+        <h1 class="heading-emphasis">Background size</h1>
+        <p>Background size specifies the size of background images.</p>
+
+        <p>There are four different syntaxes you can use with this property:</p>
+        <ul class="no-style">
+            <li><strong>Keyword syntax</strong> ("auto", "cover" and "contain")</li>
+            <li><strong>One-value syntax</strong> (sets the width of the image (height becomes "auto")</li>
+            <li><strong>Two-value syntax</strong> (first value: width of the image, second value: height)</li>
+            <li><strong>Multiple background syntax</strong> (separated with comma).</li>
+        </ul>
+
+
+        <h2 class="heading-emphasis">Keyword syntax</h2>
+        <div class="example-text">
+            <p><span class="highlight-word">auto</span> is the default value. The background image is displayed in its original size.</p>
+        </div>
+
+        <pre class="codebox"><span class="code-css">body {
+  background: url("../images/backgrounds/examples/purple-dot.jpg");
+  background-repeat:no-repeat;
+  background-size:auto;
+}</pre>
+
+        <div class="example-text">
+            <p>Example:</p>
+        </div>
+
+        <pre class="codebox"><div class="image-bg-background-size-auto"><span class="white">Testing Testing Testing
+Testing Testing Testing
+Testing Testing Testing
+Testing Testing Testing
+Testing Testing Testing
+Testing Testing Testing</span></div></pre>
+
+
+        <div class="example-text">
+            <p><span class="highlight-word">cover</span> resizes the background image to cover the entire container, even if it has to stretch the image or crop a little bit off one of the edges.</p>
+
+        </div>
+
+        <pre class="codebox"><span class="code-css">body {
+ background: url("../images/backgrounds/examples/purple-dot.jpg");
+ background-repeat:no-repeat;
+ background-size:cover;
+}</pre>
+
+        <div class="example-text">
+            <p>Example:</p>
+        </div>
+
+        <pre class="codebox"><div class="image-bg-background-size-cover">Testing Testing Testing
+  Testing Testing Testing
+  Testing Testing Testing
+  Testing Testing Testing
+  Testing Testing Testing
+  Testing Testing Testing</div></pre>
+
+        <div class="example-text">
+            <p><span class="highlight-word">contain</span> resizes the background image to make sure the image is fully visible.</p>
+            <p>The image will resize to fit the container.</p>
+        </div>
+
+        <pre class="codebox"><span class="code-css">body {
+   background: url("../images/backgrounds/examples/purple-dot.jpg");
+   background-repeat: no-repeat;
+   background-size: contain;
+  }</pre>
+
+        <div class="example-text">
+            <p>Example:</p>
+        </div>
+
+        <pre class="codebox"><div class="image-bg-background-size-contain">Testing Testing Testing
+Testing Testing Testing
+Testing Testing Testing
+Testing Testing Testing
+Testing Testing Testing
+Testing Testing Testing
+Testing Testing Testing
+Testing Testing Testing
+Testing Testing Testing
+Testing Testing Testing</div></pre>
+
+
+
+
+
+
+
+
+
+
+        <h2 class="heading-emphasis">One value syntax</h2>
+        <div class="example-text">
+            <p>If you set only one value for width, the second value for height becomes 'auto'.</p>
+        </div>
+        <pre class="codebox"><span class="code-css">body {
+background: url("../images/backgrounds/examples/purple-dot.jpg");
+background-repeat:no-repeat;
+background-size: 80px;
+}</pre>
+
+        <div class="example-text">
+            <p>Example: The image is set to 80px.</p>
+            <p>You can also use percentage, but this is not recommended. This isn't a good idea because the aspect ratio does not change, so there could be blank space at the bottom of the page after the image.</p>
+        </div>
+
+        <pre class="codebox"><div class="image-bg-background-size-onevalue">Testing Testing Testing
+Testing Testing Testing
+Testing Testing Testing
+Testing Testing Testing
+Testing Testing Testing
+Testing Testing Testing</div></pre>
+
+
+
+
+
+
+        <h2 class="heading-emphasis">Two value syntax</h2>
+        <div class="example-text">
+            <p>This sets both a width and height to the property.</p>
+        </div>
+        <pre class="codebox"><span class="code-css">body {
+background: url("../images/backgrounds/examples/purple-dot.jpg");
+background-repeat:no-repeat;
+background-size: 80px 120px;
+}</pre>
+
+        <div class="example-text">
+            <p>Example: The image is set to 80px wide and 120px high.</p>
+            <p>You can also use percentage.</p>
+        </div>
+
+        <pre class="codebox"><div class="image-bg-background-size-twovalue">Testing Testing Testing
+Testing Testing Testing
+Testing Testing Testing
+Testing Testing Testing
+Testing Testing Testing
+Testing Testing Testing</div></pre>
+
+
+
+
+
+
+
+
+
+
+        <h1 class="heading-emphasis">Shorthand</h1>
+        <p>You can use shorthand to list all background CSS properites in a single declaration.</p>
+
+        <h2 class="heading-emphasis">Shorthand syntax</h2>
+        <div class="example-container">
+            <div class="example-text">
+                <p>When using the shorthand property, the recommended order of the property values is:</p>
+                <ul class="no-style">
+                    <li>background-color</li>
+                    <li>background-image</li>
+                    <li>background-repeat</li>
+                    <li>background-attachment</li>
+                    <li>background-position</li>
+                </ul>
+                <p>But the order doesn't matter.</p>
+                <p><strong>If you mix shortland with full declarations, shorthand will override.</strong></p>
+            </div>
+            <pre class="codebox"><span class="code-css">body {
+  background: #ffffff url("img_tree.png") no-repeat scroll right top;
+}</pre>
+        </div>
+
+        <div class="example-container">
+            <div class="example-text">
+                <p>If you include background-size, it MUST be after background-position and separated with /.</p>
+            </div>
+            <pre class="codebox"><span class="code-css">body {
+    background: url(image.png) no-repeat fixed 0px 0px / cover;
+  }</span></pre>
+        </div>
+
+
+<div class="example-container">
+        <div class="example-text">
+            <p>Longhand for multiple image styles.</p>
+        </div>
+        <pre class="codebox"><span class="code-css">body {
+  background-image: url(image1.png), url(image2.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top right, bottom left;
+}</pre>
+</div>
+
+<div class="example-container">
+    <div class="example-text">
+        <p>Shorthand for multiple image styles.</p>
+    </div>
+    <pre class="codebox"><span class="code-css">body {
+  background: url(image1.png) no-repeat top right,
+              url(image2.png) no-repeat bottom left;
+}</pre>
 
     </div>
-    <!--End example-container-->
+    <!--End example container-->
 
 
+
+
+
+    </div>
+    <!--End page container-->
 </body>
 
 </html>

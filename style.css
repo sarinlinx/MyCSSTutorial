@@ -33,6 +33,10 @@ h2.heading-emphasis {
   background: rgba(101, 149, 230, 0.2);
 }
 
+.highlight-word {
+  font-size: 22px;
+  font-weight: bold;
+}
 /*___________________________________________________
 Text Colors
 ___________________________________________________*/
@@ -106,7 +110,9 @@ This affects ALL <li> items*/
   border: 1px solid #c85200;
 }
 
-
+.no-style {
+  list-style: none;
+}
 
 /*___________________________________________________
 Code Examples
@@ -246,4 +252,52 @@ url("images/backgrounds/examples/white-bg.jpg");
   background: url("images/backgrounds/examples/purple-dot.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
+}
+
+.image-bg-position-words {
+  background: url("images/backgrounds/examples/purple-dot.jpg");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.image-bg-position-percent {
+  background: url("images/backgrounds/examples/purple-dot.jpg");
+  background-repeat: no-repeat;
+  background-position: 10% 10%;
+}
+
+.image-bg-position-pixels {
+  background: url("images/backgrounds/examples/purple-dot.jpg");
+  background-repeat: no-repeat;
+  background-position: 20px 50px;
+}
+
+.image-bg-background-size-auto {
+  background: url("images/backgrounds/examples/purple-dot.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.image-bg-background-size-cover {
+  background: url("images/backgrounds/examples/purple-dot.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image-bg-background-size-contain {
+  background: url("images/backgrounds/examples/purple-dot.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.image-bg-background-size-onevalue {
+  background: url("images/backgrounds/examples/purple-dot.jpg");
+  background-repeat: no-repeat;
+  background-size: 80px;
+}
+
+.image-bg-background-size-twovalue {
+  background: url("images/backgrounds/examples/purple-dot.jpg");
+  background-repeat: no-repeat;
+  background-size: 80px 120px;
 }
