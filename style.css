@@ -37,6 +37,22 @@ h2.heading-emphasis {
   font-size: 22px;
   font-weight: bold;
 }
+
+/*___________________________________________________
+Tables
+___________________________________________________*/
+table {
+  width: 80%;
+  margin: 0 auto;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+
+
 /*___________________________________________________
 Text Colors
 ___________________________________________________*/

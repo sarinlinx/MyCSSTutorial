@@ -596,10 +596,23 @@ Testing Testing Testing</div></pre>
 
 
 
+<h1 class="heading-emphasis">Different background images for different displays</h1>
+<p>If you have a high resolution display (retina) you may want to display a different image than a smaller screen with less resolution.</p>
 
+<div class="example-container">
+    <div class="example-text">
+        <p>Use a media query.</p>
+      </div>
+<pre class="codebox"><span class="code-css">header {
+  background: url(image.jpg);
+}
 
-
-
+@media (min-resolution: 192dpi) {
+  header {
+    /* Using a larger image for retina screens */
+    background: url(image@2x.jpg);
+  }
+}<pre></div>
 
 
         <h1 class="heading-emphasis">Shorthand</h1>
@@ -633,7 +646,7 @@ Testing Testing Testing</div></pre>
   }</span></pre>
         </div>
 
-
+<h2 class="heading-emphasis">Shorthand for multiple images</h2>
 <div class="example-container">
         <div class="example-text">
             <p>Longhand for multiple image styles.</p>
