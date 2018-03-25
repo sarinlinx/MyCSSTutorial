@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>CSS images</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+
+<body>
+    <div class="container">
+        <a href="../index.html">Home page</a>
+
+        <header>
+            <h1>CSS images</h1>
+        </header>
+
+        <h1 class="heading-emphasis">Adjusting images</h1>
+
+
+        <h2 class="heading-emphasis">Reduce image size</h2>
+        <div class="example-container">
+            <div class="example-text">
+                <p>To adjust the size of an image, add a class. Then, in CSS, add only the width value. The height automatically adjusts to aspect-ratio</p>
+            </div>
+            <pre class="codebox"><span class="code-html">&lt;img class="blah" asdf&gt;</span>
+
+<span class="code-css">.blah {
+  width: 300px;
+}</span></pre>
+        </div>
+
+
+
+        <h2 class="heading-emphasis">Reshape image</h2>
+        <div class="example-container">
+            <div class="example-text">
+                <p>Add border radius. Make sure you start with a square image or it will turn it into an oval.</p>
+            </div>
+            <pre class="codebox"><span class="code-css">img {
+  border-radius: 50%;
+}</span></pre>
+            <div class="example-text">
+                <p></p>
+            </div>
+            <pre class="codebox"><img class="reshapeimg-per" src="../images/redsquare.png"/>
+</pre>
+
+
+
+            <div class="example-text">
+                <p>Here's an example using pixels.</p>
+            </div>
+            <pre class="codebox"><span class="code-css">img {
+  border-radius: 22px;
+}</span></pre>
+            <div class="example-text">
+                <p></p>
+            </div>
+            <pre class="codebox"><img class="reshapeimg-px" src="../images/redsquare.png"/>
+</pre>
+        </div>
+
+
+        <h2 class="heading-emphasis">Center an image</h2>
+            <div class="example-text">
+                <p>Use margin:auto to center and image.</p>
+            </div>
+            <pre class="codebox"><span class="code-css">img {
+  display: block;
+  margin: 0 auto;
+}</span></pre>
+            <div class="example-text">
+                <p></p>
+            </div>
+            <pre class="codebox"><img class="alignimg-margin" src="../images/redsquare.png"/>
+</pre></div>
+
+
+</body>
+
+</html>

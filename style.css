@@ -150,7 +150,7 @@ ___________________________________________________*/
   /*border: 1px solid green;*/
   display: inline-block;
   width: 48%;
-  padding: 10px 5px 10px 5px;
+  padding: 5px;
   float: left;
   }
 
@@ -171,6 +171,27 @@ ___________________________________________________*/
   padding: 10px 5px 10px 5px;
 }
 
+.reshapeimg-per {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.reshapeimg-px {
+  width: 50px;
+  border-radius: 22px;
+}
+
+.alignimg-txt {
+  width: 50px;
+  text-align: center;
+  color: #fff;
+}
+
+.alignimg-margin {
+  width: 50px;
+  display: block;
+  margin: 0 auto;
+}
 
 /*___________________________________________________
 Note boxes

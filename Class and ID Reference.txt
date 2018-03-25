@@ -12,10 +12,13 @@ Class and ID Reference
 Common code to cut & paste
 --------------------------
 <div class="example-container">
+
     <div class="example-text">
-        <p>Test goes here</p>
-</div>
-  <pre class="codebox"><span class="code-html">CODE Here</span></pre>
+        <p>Text goes here</p>
+    </div>
+  
+    <pre class="codebox"><span class="code-html">CODE Here</span></pre>
+
 </div>
 
 
