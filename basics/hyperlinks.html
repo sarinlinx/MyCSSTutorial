@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Hyperlinks</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+
+<body>
+    <div class="container">
+        <a href="../index.html">Home page</a>
+
+        <header>
+            <h1>Hyperlinks</h1>
+        </header>
+
+        <h1 class="heading-emphasis">The 4 link states</h1>
+
+
+        <h2 class="heading-emphasis">Hyperlinks can be styled differently depending on what state they are in.</h2>
+        <div class="example-container">
+            <div class="example-text">
+                <p>a:link — a normal, unvisited link</p>
+            </div>
+            <pre class="codebox"><span class="code-css">/* unvisited link */
+  a:link {
+  color: red;
+}</span></pre>
+
+            <div class="example-text">
+                <p>a:visited — a link the user has visited</p>
+            </div>
+            <pre class="codebox"><span class="code-css">/* visited link */
+  a:visited {
+  color: green;
+}</span></pre>
+
+            <div class="example-text">
+                <p>a:hover — a link when the user mouses over it</p>
+            </div>
+            <pre class="codebox"><span class="code-css">/* mouse over link */
+  a:hover {
+  color: hotpink;
+}</span></pre>
+
+            <div class="example-text">
+                <p>a:active — a link the moment it is clicked</p>
+            </div>
+            <pre class="codebox"><span class="code-css">/* selected link */
+  a:active {
+  color: blue;
+}</span></pre>
+        </div>
+
+
+
+
+
+
+        <h2 class="heading-emphasis">Make the link look like a red box to click on.</h2>
+        <div class="example-container">
+            <div class="example-text">
+                <p>You can style the hyperlink to look like a button.</p>
+                <p>NOTE: If you're using a class or ID, it must come after the 'a' character'.</p>
+            </div>
+            <pre class="codebox"><span class="code-html">&lt;a class="link-btn" href="#"&gt;Click Here&lt;/a&gt;</span>
+
+<span class="code-css">a.link-btn:link, a.link-btn:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a.link-btn:hover, a.link-btn:active {
+  background-color: red;
+}</span></pre>
+
+<div class="example-text">
+    <p>Example:</p>
+  </div>
+  <pre class="codebox"><a class="link-btn" href="#">Click Here</a></pre>
+        </div>
+
+
+
+</body>
+
+</html>

@@ -171,28 +171,6 @@ ___________________________________________________*/
   padding: 10px 5px 10px 5px;
 }
 
-.reshapeimg-per {
-  width: 50px;
-  border-radius: 50%;
-}
-
-.reshapeimg-px {
-  width: 50px;
-  border-radius: 22px;
-}
-
-.alignimg-txt {
-  width: 50px;
-  text-align: center;
-  color: #fff;
-}
-
-.alignimg-margin {
-  width: 50px;
-  display: block;
-  margin: 0 auto;
-}
-
 /*___________________________________________________
 Note boxes
 ___________________________________________________*/
@@ -337,4 +315,75 @@ url("images/backgrounds/examples/white-bg.jpg");
   background: url("images/backgrounds/examples/purple-dot.jpg");
   background-repeat: no-repeat;
   background-size: 80px 120px;
+}
+
+.reshapeimg-per {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.reshapeimg-px {
+  width: 50px;
+  border-radius: 22px;
+}
+
+.alignimg-txt {
+  width: 50px;
+  text-align: center;
+  color: #fff;
+}
+
+.alignimg-margin {
+  width: 50px;
+  display: block;
+  margin: 0 auto;
+}
+
+a.link-btn:link, a.link-btn:visited {
+background-color: #f44336;
+color: white;
+padding: 14px 25px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+}
+
+a.link-btn:hover, a.link-btn:active {
+background-color: red;
+}
+
+.horz-nav-display-no-inline-block {
+  background-color: green;
+  text-align: center;
+}
+.horz-nav-display-no-inline-block a {
+  border: 1px solid red;
+  padding: 10px;
+  background-color: yellow;
+  margin-right: 5px;
+}
+
+.horz-nav-display-inline-block {
+  background-color: green;
+  text-align: center;
+}
+.horz-nav-display-inline-block a {
+  border: 1px solid red;
+  padding: 10px;
+  display: inline-block;
+  background-color: yellow;
+  margin-right: 5px;
+}
+
+.horz-nav-display-center {
+  background-color: green;
+  text-align: center;
+  font-size: 0;
+}
+.horz-nav-display-center a {
+  border: 1px solid red;
+  padding: 10px;
+  display: inline-block;
+  background-color: yellow;
+  font-size: 16px;
 }
