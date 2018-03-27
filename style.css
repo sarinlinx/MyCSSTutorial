@@ -387,3 +387,37 @@ background-color: red;
   background-color: yellow;
   font-size: 16px;
 }
+
+.horz-nav-no-float {
+  background-color: yellow;
+}
+.horz-nav-no-float a {
+  background-color: red;
+}
+
+.horz-nav-float {
+}
+.horz-nav-float a {
+  background-color: red;
+  float: left;
+}
+
+.horz-nav-float-overflow {
+  background-color: yellow;
+  overflow: hidden;
+}
+.horz-nav-float-overflow a {
+  background-color: red;
+  float: left;
+}
+
+.horz-nav-list-float {
+  list-style-type: none;
+  background-color: yellow;
+  overflow: hidden;
+}
+.horz-nav-list-float a {
+  background-color: red;
+  float: left;
+  padding-right: 5px;
+}

@@ -50,7 +50,7 @@
             </div>
 
             <div class="example-text">
-                <p>For example:</p>
+                <p>Add display: inline-block;</p>
             </div>
             <pre class="codebox"><span class="code-css">.display a {
   padding: 10px; //add size to link
@@ -62,8 +62,8 @@
             </div>
 
             <pre class="codebox"><nav class="horz-nav-display-inline-block">
-        <a href="#">About</a><a href="#">Contact</a>
-        </nav></pre>
+<a href="#">About</a><a href="#">Contact</a>
+</nav></pre>
 
         </div>
 
@@ -73,18 +73,20 @@
             </div>
             <div class="alert-content">
                 <p>Notice how there is a space between the anchor tags? That is because the HTML for each link is on a different line.</p>
-                <p>Instead of changing your HTML, just change the font to zero for the parent element, then add it for the child element.</p></div></div>
-
-
-
-
-
-<div class="example-container">
-        <div class="example-text">
-            <p>Set parent font to zero.</p>
-            <p>Set child font (otherwise it would also be zero since it would inherit the parent font).</p>
+                <p>Instead of changing your HTML, just change the font to zero for the parent element, then add it for the child element.</p>
+            </div>
         </div>
-        <pre class="codebox"><span class="code-html">&lt;nav class="display"&gt;
+
+
+
+
+
+        <div class="example-container">
+            <div class="example-text">
+                <p>Set parent font to zero.</p>
+                <p>Set child font (otherwise it would also be zero since it would inherit the parent font).</p>
+            </div>
+            <pre class="codebox"><span class="code-html">&lt;nav class="display"&gt;
 &lt;a href="#"&gt;About&lt;/a&gt;
 &lt;a href="#"&gt;Contact&lt;/a&gt;
 &lt;/nav&gt;</span>
@@ -100,40 +102,195 @@
   <span class="highlight-word">font-size: 16px;</span>
 }</span></pre>
 
-<div class="example-text">
-    <p>Example:</p>
-</div>
+            <div class="example-text">
+                <p>Example:</p>
+            </div>
 
-<pre class="codebox"><nav class="horz-nav-display-center">
+            <pre class="codebox"><nav class="horz-nav-display-center">
 <a href="#">About</a><a href="#">Contact</a>
 </nav></pre>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <h2 class="heading-emphasis">Make a menu horizontal using the 'float' property</h2>
+        <div class="alert alert-note">
+            <div class="alert-icon">
+                <img src="../images/note-icon.png" width="60" height="60">
+            </div>
+            <div class="alert-content">
+                <p>Using display:inline-block can be achieved with float, but floating requires you to clear the element after the floating boxes. So inline-block is easier.</p>
+                <p>Also, when using float, the display property has no affect.</p>
+            </div>
+        </div>
+
+
+
+
+        <div class="example-container">
+            <div class="example-text">
+                <p>Background colors only</p>
+            </div>
+
+            <pre class="codebox"><span class="code-html">&lt;nav class="float"&gt;
+&lt;a href="#"&gt;About&lt;/a&gt;
+&lt;a href="#"&gt;Contact&lt;/a&gt;
+&lt;/nav&gt;</span>
+
+<span class="code-css">.float {
+  background-color: yellow;
+}
+
+.float a {
+  background-color: red;
+}</span></pre>
+            <div class="example-text">
+                <p>Original appearance BEFORE adding float:left; to anchor tag:</p>
+            </div>
+            <pre class="codebox"><nav class="horz-nav-no-float">
+<a href="#">About</a> <a href="#">Contact</a>
+          </nav></pre>
 </div>
 
 
 
 
 
+  <div class="example-container">
+              <div class="example-text">
+                  <p>Addding float: left; causes the spacing to dissapear, but
+Addding float: left; causes the parent element (in yellow) to dissapear</p>
+              </div>
+
+              <pre class="codebox"><span class="code-html">&lt;nav class="float"&gt;
+  &lt;a href="#"&gt;About&lt;/a&gt;
+  &lt;a href="#"&gt;Contact&lt;/a&gt;
+  &lt;/nav&gt;</span>
+
+  <span class="code-css">.float {
+    background-color: yellow;
+    <span class="highlight-word">float: left;</span>
+  }
+
+  .float a {
+    background-color: red;
+  }</span></pre>
+              <div class="example-text">
+                  <p>Example: The parent container does not recognize the height of floated child elements and collapses to a height of zero.</p>
+              </div>
+              <pre class="codebox"><nav class="horz-nav-float">
+  <a href="#">About</a> <a href="#">Contact</a>
+            </nav></pre>
+        </div>
 
 
 
 
 
-    <h2 class="heading-emphasis">Make a menu horizontal using the 'float' property</h2>
+
+
+
+
+
+
+          <div class="example-container">
+            <div class="example-text">
+                <p>To restore parent element size, add overflow:hidden;</p>
+            </div>
+
+            <pre class="codebox"><span class="code-html">&lt;nav class="float"&gt;
+&lt;a href="#"&gt;About&lt;/a&gt;
+&lt;a href="#"&gt;Contact&lt;/a&gt;
+&lt;/nav&gt;</span>
+
+<span class="code-css">.horz-nav-float-overflow {
+  background-color: yellow;
+  <span class="highlight-word">overflow: hidden;</span>
+}
+.horz-nav-float-overflow a {
+  background-color: red;
+  float: left;
+}</pre>
+            <div class="example-text">
+                <p>Example:</p>
+            </div>
+            <pre class="codebox"><nav class="horz-nav-float-overflow">
+<a href="#">About</a><a href="#">Contact</a>
+          </nav></pre>
+      </div>
+
+
     <div class="alert alert-note">
         <div class="alert-icon">
             <img src="../images/note-icon.png" width="60" height="60">
         </div>
         <div class="alert-content">
-            <p>Using display:inline-block can be achieved with float, but floating requires you to clear the element after the floating boxes. So inline-block is easier.</p>
-          <p>Also, when using float, the display property has no affect.</p></div></div>
+            <p>If you apply float to an inline element, the browser automatically switches display of element to block. This means you can add padding without adjusting the display value.</p>
+          <p><span class="red">Create an example of this</span></div></div>
+
+
+
+
+            <h2 class="heading-emphasis">Center a horizontal menu using the 'float' property</h2>
+
+            <div class="example-text">
+                <p>text-align: center does NOT work with float you must set width. Divide number of links by a percent.</p>
+                <p>For example, for two links use 50%, for 4 links use 25%.</p>
+            </div>
+
+            <pre class="codebox"><span class="code-html">&lt;nav class="float"&gt;
+  &lt;a href="#"&gt;About&lt;/a&gt;
+  &lt;a href="#"&gt;Contact&lt;/a&gt;
+  &lt;a href="#"&gt;Email&lt;/a&gt;
+  &lt;a href="#"&gt;Links&lt;/a&gt;
+&lt;/nav&gt;</span>
+
+
+<span class="code-css">.float a {
+  background-color: red;
+  float: left;
+  <span class="highlight-word">width: 25%;</span>
+}</pre>
+
+<div class="alert alert-note">
+    <div class="alert-icon">
+        <img src="../images/note-icon.png" width="60" height="60">
+    </div>
+    <div class="alert-content">
+        <p>This works best with 4 or more links.</p></div></div>
 
 
 
 
 
 
+
+        <h2 class="heading-emphasis">Create a horizontal list from an unordered list</h2>
+
+        <div class="example-text">
+            <p>Everything above applies the same to unordered lists that you're trying to make a navigation menu from. Just make sure to remove the style from the list.</p>
+        </div>
+
+        <pre class="codebox"><span class="code-css">.ul-class {
+  <span class="highlight-word">list-style-type: none;</span>
+}</pre>
 
   </div>
+
+
+
+
+
+
+
+
 </body>
 
 </html>
