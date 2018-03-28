@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Lists</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <a href="../index.html">Lists page</a>
+        <header>
+            <h1>Lists</h1>
+        </header>
+
+        <h2 class="heading-emphasis">Lists</h2>
+
+        <div class="example-container">
+            <div class="example-text">
+                <p>You can style how lists look depending on if they are unordered or ordered.</p>
+
+            </div>
+            <pre class="codebox"><span class="code-html"><span class="highlight-word">unordered lists</span>
+&lt;ul class="a"&gt;
+  &lt;li>Coffee&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul class="b"&gt;
+  &lt;li&gt;Coffee&lt;/li&gt;
+&lt;/ul&gt;</span>
+
+<span class="code-css">ul.a {
+  list-style-type: circle;
+}
+
+ul.b {
+  list-style-type: square;
+}</span></pre>
+
+            <div class="example-text">
+                <p>Example of unordered lists.</p>
+
+            </div>
+            <pre class="codebox"><ul class="unordered-list-a">
+  <li>Coffee</li>
+</ul>
+<ul class="unordered-list-b">
+  <li>Coffee</li>
+</ul></pre>
+        </div>
+
+
+
+
+
+
+
+        <div class="example-container">
+            <div class="example-text">
+                <p>Example of ordered lists.</p>
+            </div>
+
+            <pre class="codebox"><span class="code-html"><span class="highlight-word">Ordered lists</span>
+&lt;ol class="c"&gt;
+  &lt;li&gt;Coffee&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ol class="d"&gt;
+  &lt;li&gt;Coffee&lt;/li&gt;
+&lt;/ol&gt;</span>
+
+<span class="code-css">ol.c {
+  list-style-type: upper-roman;
+}
+
+ol.d {
+  list-style-type: lower-alpha;
+}</span></pre>
+
+
+            <div class="example-text">
+                <p>Example of ordered lists.</p>
+            </div>
+
+            <pre class="codebox"><ol class="ordered-list-c">
+  <li>Coffee</li>
+</ol>
+
+<ol class="ordered-list-d">
+  <li>Coffee</li>
+</ol></pre>
+        </div>
+        <!--end example-container-->
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="heading-emphasis">Add a custom image for the list items</h2>
+        <div class="example-container">
+            <div class="example-text">
+                <p>Example of ordered lists.</p>
+            </div>
+
+            <pre class="codebox"><span class="code-html">&lt;ol&gt;
+ &lt;li&gt;Coffee&lt;/li&gt;
+&lt;/ol&gt;</span>
+
+<span class="code-css">ul {
+  list-style-image: url('sqpurple.gif');
+}</span></pre>
+
+            <div class="example-text">
+                <p>Example of a custom list image.</p>
+            </div>
+
+            <pre class="codebox"><ol class="custom-list-image">
+<li>Coffee</li>
+</ol></pre>
+
+
+
+
+    <div class="example-text">
+        <p>Shorthand for all properties on a custom image. The following can be used:</p>
+    </div>
+
+    <pre class="codebox"><span class="code-css">ul {
+  list-style: square inside url("sqpurple.gif");
+}</span></pre>
+
+
+<div class="alert alert-note">
+    <div class="alert-icon">
+        <img src="../images/note-icon.png" width="60" height="60">
+    </div>
+    <div class="alert-content">
+        <p><strong>list-style-type</strong> (if a list-style-image is specified, the value of this property will be displayed if the image for some reason cannot be displayed). View the following for a full list of types:
+        <ul><li><a href="https://www.w3schools.com/cssref/pr_list-style-type.asp">list-style-type options</a></li></ul></p>
+<p><strong>list-style-position</strong> (specifies whether the list-item markers should appear inside or outside the content flow)</p>
+<p><strong>list-style-image</strong> (specifies an image as the list item marker)</p>
+<p>If one of the property values above are missing, the default value for the missing property will be inserted, if any.</p>
+
+<p>View the following link to see the difference between inside and outside:
+<ul><li><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_list-style-position">diff between inside and outside</a></li></ul></div></div>
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>

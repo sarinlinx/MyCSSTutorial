@@ -421,3 +421,40 @@ background-color: red;
   float: left;
   padding-right: 5px;
 }
+
+ul.unordered-list-a {
+  list-style-type: circle;
+  color: white;
+}
+
+ul.unordered-list-b {
+  list-style-type: square;
+  color: white;
+}
+
+ol.ordered-list-c {
+  list-style-type: upper-roman;
+  color: white;
+}
+
+ol.ordered-list-d {
+  list-style-type: lower-alpha;
+  color: white;
+}
+
+ol.custom-list-image {
+  list-style-image: url('images/backgrounds/examples/purple-dot.jpg');
+  color: white;
+}
+
+ol.shorthand-for-custom-image {
+  list-style: circle outside url('images/backgrounds/examples/purple-dot.jpg');
+  color: white;
+}
+
+.center-section {
+  margin: auto;
+ width: 60%;
+ border: 3px solid #73AD21;
+ padding: 10px;
+}
