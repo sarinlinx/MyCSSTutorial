@@ -95,6 +95,104 @@
                 <td><a href="https://coolors.co/" target="_blank">coolors.co</a></td>
             </tr>
         </table>
+
+
+        <h2 class="heading-emphasis">Color codes</h2>
+        <div class="example-container">
+        <div class="example-text">
+            <p>You can type in the name of the color, or use a HEX code. All major browsers support 140 colors.
+            <ul><li><a href="https://www.w3schools.com/colors/colors_names.asp">140 colors supported in all browsers</a></li></ul></p>
+
+        </div>
+        <pre class="codebox"><span class="code-css">p {
+  background-color: color: white;
+  background-color: color: #ffffff;
+}</pre>
+
+
+
+
+
+
+
+
+        <h2 class="heading-emphasis">rgb colors</h2>
+        <div class="example-container">
+        <div class="example-text">
+            <p>rgb color values specify Red, Green, and Blue.</p>
+
+        </div>
+        <pre class="codebox"><span class="code-css">{
+  background-color: rgb(255, 0, 0); /*red*/
+}</pre>
+
+
+
+        <h2 class="heading-emphasis">rgba colors</h2>
+        <div class="example-container">
+<div class="example-text">
+    <p>rgba color values specify an opacity value. The 'a' stands of 'Alpha Channel'.</p>
+    <p>The opacity parameter is specified as a number between 0 (transparent) and 1 (opaque).</p>
+
+</div>
+<pre class="codebox"><span class="code-css">{
+background-color: rgba(255, 0, 0, 0.3); /*red with opacity */
+}</pre>
+</div>
+
+
+
+<h2 class="heading-emphasis">HSL colors</h2>
+<div class="example-container">
+<div class="example-text">
+    <p>HSL stands for hue, saturation, and lightness. These values represent a cylindrical-coordinate representation of colors.</p>
+    <h3>Hue</h3>
+    <p>On a circular color wheel, 0 and 360 would represent red.</p.
+      <p>120 is green</p>
+      <p>240 is blue</p>
+<h3>Saturation</h3>
+<p>Saturation is a % value. 0% is a shade of gray. 100% is full color.</p>
+<h3>Lightness</h3>
+<p>Lightness is a % value. 0% is black. 100% is white. 50% is the normal color.</p>
+</div>
+<pre class="codebox"><span class="code-html">&lt;p class="hsl-colors-p1">Green&lt;/p&gt;
+&lt;p class="hsl-colors-p2"&gt;Light Green&lt;/p&gt;
+&lt;p class="hsl-colors-p3"&gt;Dark Green&lt;/p&gt;
+&lt;p class="hsl-colors-p4"&gt;Pastel Green&lt;/p&gt;</span>
+
+<span class="code-css">.p1 {background-color: hsl(120, 100%, 50%);} /* green */
+.p2 {background-color: hsl(120, 100%, 75%);} /* light green */
+.p3 {background-color: hsl(120, 100%, 25%);} /* dark green */
+.p4 {background-color: hsl(120, 60%, 70%);}  /* pastel green */
+
+<p class="hsl-colors-p1">Green</p>
+<p class="hsl-colors-p2">Light Green</p>
+<p class="hsl-colors-p3">Dark Green</p>
+<p class="hsl-colors-p4">Pastel Green</p></pre>
+</div>
+
+
+
+<h2 class="heading-emphasis">HSLA colors</h2>
+<div class="example-container">
+<div class="example-text">
+    <p>HSLA colors add an opacity value (Alpha Channel), just like rgba colors.</p>
+</div>
+<pre class="codebox"><span class="code-html">&lt;p class="hsl-colors-p1">Green&lt;/p&gt;
+&lt;p class="hsl-colors-p2"&gt;Light Green&lt;/p&gt;
+&lt;p class="hsl-colors-p3"&gt;Dark Green&lt;/p&gt;
+&lt;p class="hsl-colors-p4"&gt;Pastel Green&lt;/p&gt;</span>
+
+<span class="code-css">.p1 {background-color: hsla(120, 100%, 50%, 0.3);} /* green */
+.p2 {background-color: hsla(120, 100%, 75%, 0.3);} /* light green */
+.p3 {background-color: hsla(120, 100%, 25%, 0.3);} /* dark green */
+.p4 {background-color: hsla(120, 60%, 70%, 0.3);}  /* pastel green */
+
+<p class="hsla-colors-p1">Green</p>
+<p class="hsla-colors-p2">Light Green</p>
+<p class="hsla-colors-p3">Dark Green</p>
+<p class="hsla-colors-p4">Pastel Green</p></pre>
+</div>
 </body>
 
 </html>

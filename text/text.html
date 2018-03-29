@@ -12,21 +12,187 @@
     <div class="container">
         <a href="../index.html">Home page</a>
         <header>
-            <h1>Aligning</h1>
+            <h1>Text</h1>
         </header>
 
-        <h2 class="heading-emphasis">Text</h2>
+        <h2 class="heading-emphasis">Text color</h2>
+        <div class="example-container">
+            <div class="example-text">
+                <p>With CSS, a color is most often specified by:</p>
+                <ul>
+                    <li>A color name like "red"</li>
+                    <li>A HEX value like "#ff0000"</li>
+                    <li>An rgb value like "rgb(255, 0, 0)"</li>
+                </ul>
+            </div>
+            <pre class="codebox"><span class="code-css">p {
+  color: red;
+  color: #ff0000;
+  color: rgb(255, 0, 0);
+}</span></pre>
+
+        </div>
+        <div class="alert alert-note">
+            <div class="alert-icon">
+                <img src="../images/note-icon.png" width="60" height="60">
+            </div>
+            <div class="alert-content">
+                <p>For W3C compliant CSS: If you define the color property, you must also define the background-color.</p>
+            </div>
+        </div>
+
+
+
+
+
+        <h2 class="heading-emphasis">Text decoration</h2>
+        <div class="example-container">
+            <div class="example-text">
+                <p>text-decoration allows you to add or remove decorations from text.</p>
+                <p>The value text-decoration: none; is often used to remove underlines from links.</p>
+              </div>
+            <pre class="codebox"><span class="code-css">h1 {
+  text-decoration: overline;
+}
+
+h2 {
+  text-decoration: line-through;
+}
+
+h3 {
+  text-decoration: underline;
+}
+
+h3 {
+  text-decoration: none;
+}</span></pre>
+
 
 <div class="example-text">
-    <p>jasdfasdf asdf asdf asdf</p>
+    <p>Example:</p>
+  </div>
+<pre class="codebox"><span class="text-decoration-overline">Overline</span>
+
+<span class="text-decoration-line-through">Line Through</span>
+
+<span class="text-decoration-underline">Underline</span>
+
+<span class="text-decoration-none">None</span></pre>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <h2 class="heading-emphasis">Transform text to uppercase/lowercase/capitalize</h2>
+      <div class="example-container">
+          <div class="example-text">
+              <p>text-transform allows you to turn everything into uppercase or lowercase letters, or capitalize the first letter of each word.</p>
+            </div>
+          <pre class="codebox"><span class="code-css">p.uppercase {
+  text-transform: uppercase;
+}
+
+p.lowercase {
+  text-transform: lowercase;
+}
+
+p.capitalize {
+  text-transform: capitalize;
+}
+
+p.capitalize {
+  text-transform: none;
+}</span></pre>
+
+    </div>
+
+
+    <h2 class="heading-emphasis">Indenting text</h2>
+    <div class="example-container">
+        <div class="example-text">
+            <p>text-indent is used to specify the indentation of the first line of a block of text.</p>
+            <p>You can use pixels or %.</p>
+          </div>
+        <pre class="codebox"><span class="code-html">&lt;p class="indent-section"&gt;Blah blah bl
+s dlfjakf
+dkjfdkjfa
+djfkdf kdjf kdjfkd
+asdfdfsadf
+asdfasdf
+&lt;/p&gt;</span>
+
+
+<span class="code-css">.indent-section {
+  text-indent: 50px;
+}
+
+.indent-section {
+  text-indent: 10%;
+}</span></pre>
+
+
+<div class="example-text">
+    <p>Example:</p>
+  </div>
+<pre class="codebox"><span class="text-indent-section">     Blah blah blah kdj s dlfjakf
+dkjfdkjfa
+djfkdf kdjf kdjfkd
+asdfdfsadf
+asdfasdf</span></pre>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="heading-emphasis">Letter spacing</h2>
+  <div class="example-container">
+      <div class="example-text">
+          <p>letter-spacing specifies the space between the characters in a text.</p>
+        </div>
+      <pre class="codebox"><span class="code-css">.letter-spacing {
+  letter-spacing: 3px;
+}
+
+.letter-spacing {
+  letter-spacing: -3px;
+}
+
+.letter-spacing {
+  letter-spacing: normal;
+}</span></pre>
+
+
+<div class="example-text">
+  <p>Example:</p>
+</div>
+<pre class="codebox"><span class="letter-spacing-pixels">Letters spaced by pixels</span>
+<span class="letter-spacing-none">No spacing used</span></pre>
 
 </div>
-<pre class="codebox"><span class="code-css">div {
-  jkljlkj
-}</pre>
- </div>
 
 
+
+    </div>
 </body>
 
 </html>

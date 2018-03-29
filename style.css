@@ -452,9 +452,72 @@ ol.shorthand-for-custom-image {
   color: white;
 }
 
-.center-section {
-  margin: auto;
- width: 60%;
- border: 3px solid #73AD21;
- padding: 10px;
+.hsl-colors-p1 {
+  background-color: hsl(120, 100%, 50%);
+  color: #000;
+} /* green */
+
+.hsl-colors-p2 {
+  background-color: hsl(120, 100%, 75%);
+  color: #000;
+} /* light green */
+
+.hsl-colors-p3 {
+  background-color: hsl(120, 100%, 25%);
+} /* dark green */
+
+.hsl-colors-p4 {
+  background-color: hsl(120, 60%, 70%);
+  color: #000;
+}  /* pastel green */
+
+.hsla-colors-p1 {
+  background-color: hsl(120, 100%, 50%, 0.3);
+} /* green */
+
+.hsla-colors-p2 {
+  background-color: hsl(120, 100%, 75%, 0.3);
+} /* light green */
+
+.hsla-colors-p3 {
+  background-color: hsl(120, 100%, 25%, 0.3);
+} /* dark green */
+
+.hsla-colors-p4 {
+  background-color: hsl(120, 60%, 70%, 0.3);
+}  /* pastel green */
+
+.text-decoration-overline {
+  text-decoration: overline;
+  color: #fff;
+}
+
+.text-decoration-line-through {
+  text-decoration: line-through;
+  color: #fff;
+}
+
+.text-decoration-underline {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+  color: #fff;
+}
+
+.text-indent-section {
+  text-indent: 25px;
+  color: white;
+}
+
+.letter-spacing-pixels {
+  color: white;
+  letter-spacing: 3px;
+}
+
+.letter-spacing-none {
+  color: white;
+  letter-spacing: normal;
 }
