@@ -162,6 +162,14 @@ ___________________________________________________*/
   padding: 10px 5px 10px 5px;
 }
 
+.codebox-white {
+  /*border: 1px solid white;*/
+  width: 48%;
+  overflow: auto;
+  background: #fff;
+  padding: 10px 5px 10px 5px;
+}
+
 .codebox-fixed-height {
   /*border: 1px solid white;*/
   width: 48%;
@@ -520,4 +528,13 @@ ol.shorthand-for-custom-image {
 .letter-spacing-none {
   color: white;
   letter-spacing: normal;
+}
+
+.font-variant-small-caps {
+  color: white;
+  font-variant: small-caps;
+}
+
+.font-icon-example {
+  background-color: white;
 }
