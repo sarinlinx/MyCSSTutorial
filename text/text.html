@@ -151,19 +151,6 @@ asdfasdf</span></pre>
 
   </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
   <h2 class="heading-emphasis">Letter spacing</h2>
   <div class="example-container">
       <div class="example-text">
@@ -187,8 +174,183 @@ asdfasdf</span></pre>
 </div>
 <pre class="codebox"><span class="letter-spacing-pixels">Letters spaced by pixels</span>
 <span class="letter-spacing-none">No spacing used</span></pre>
+</div>
+
+<h2 class="heading-emphasis">Line Height</h2>
+<div class="example-container">
+    <div class="example-text">
+        <p>Line Height specifies the space between lines.</p>
+      </div>
+    <pre class="codebox"><span class="code-css">.small {
+  line-height: 0.8;
+}
+
+.big {
+  line-height: 1.8;
+}div {
+
+.normal {
+  line-height:normal;
+}
+
+div {
+  line-height: 25px;
+}
+
+div {
+  line-height:150%;
+}</span></pre>
+
+
+<div class="example-text">
+<p>Example. Space between lines goes from small, to normal, to large.</p>
+</div>
+<div class="codebox"><span class="line-height-large">Line height large<br>
+Line height large<br>
+Line height large</span></div>
+</div>
+
+<h2 class="heading-emphasis">Word Spacing</h2>
+<div class="example-container">
+    <div class="example-text">
+        <p>word-spacing specifies the space between the words in a text.</p>
+      </div>
+    <pre class="codebox"><span class="code-css">h1 {
+  word-spacing: -5px;
+}
+
+h2 {
+  word-spacing: 10px;
+}</span></pre>
+
+
+<div class="example-text">
+<p>Example. Space between lines goes from small, to normal, to large.</p>
+</div>
+<pre class="codebox"><span class="word-spacing-small">Small space between words.</span>
+<span class="word-spacing-large">Large space between words.</span>
+</pre>
+</div>
+
+<h2 class="heading-emphasis">Text direction</h2>
+<div class="example-container">
+    <div class="example-text">
+        <p>direction is used to specify which direction the text grows from.</p>
+      </div>
+    <pre class="codebox"><span class="code-css">/* text position to right and moves to left while typing */
+div {
+  direction: rtl;
+}
+
+/* text position to left and moves to right while typing */
+div {
+  direction: ltr;
+}</span></pre>
+
+<h2 class="heading-emphasis">Bi directional override</h2>
+<p>Look into this</p>
+<ul><li><a href="https://www.w3schools.com/cssref/pr_text_unicode-bidi.asp">bi directional override</a></li></ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="heading-emphasis">text-shadow</h2>
+<div class="example-container">
+    <div class="example-text">
+        <p>text-shadow adds a shadow to the text in different directions. The following example specifies the position of the horizontal shadow (3px), the position of the vertical shadow (2px) and the color of the shadow (red):</p>
+        <p>SYNTAX: text-shadow: h-shadow v-shadow blur-radius color;</p>
+      </div>
+
+    <pre class="codebox"><span class="code-css">h1 {
+  text-shadow: 3px 2px red;
+}</span></pre>
+</div>
+
+<div class="example-container">
+<div class="example-text">
+<p>Example. Horizontal red shadow to the right.</p>
+</div>
+
+<pre class="codebox"><span class="code-css">div {
+  text-shadow: 3px 0px red;
+}</span>
+
+<span class="txt-shadow-hor-right-red">Horizontal red text shadow to the right.</span>
+</pre>
+</div>
+
+<div class="example-container">
+<div class="example-text">
+<p>Example. Horizontal red shadow to the left.</p>
+</div>
+
+<pre class="codebox"><span class="code-css">div {
+  text-shadow: -3px 0px red;
+}</span>
+
+<span class="txt-shadow-hor-left-red">Horizontal red text shadow to the left.</span>
+</pre>
+</div>
+
+<div class="example-container">
+<div class="example-text">
+<p>Example. Vertical downwards red shadow.</p>
+</div>
+
+<pre class="codebox"><span class="code-css">div {
+  text-shadow: 0px 3px red;
+}</span>
+
+<span class="txt-shadow-vert-down-red">Vertical downwards red text shadow.</span>
+</pre>
 
 </div>
+
+<div class="example-container">
+<div class="example-text">
+<p>Example. Vertical upwards red shadow.</p>
+</div>
+
+<pre class="codebox"><span class="code-css">div {
+  text-shadow: 0px -3px red;
+}</span>
+
+<span class="txt-shadow-vert-up-red">Vertical upwards red text shadow.</span>
+</pre>
+
+</div>
+
+
+<div class="example-container">
+<div class="example-text">
+<p>Example. Horizontal and Vertical yellow shadow with a blur.</p>
+</div>
+
+<pre class="codebox"><span class="code-css">div {
+  text-shadow: 3px 3px 3px yellow;
+}</span>
+
+<span class="txt-shadow-blur-red">Text shadow with a blur.</span>
+</pre>
+
+</div>
+
+
+
 
 
 
