@@ -4,15 +4,29 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Test page</title>
-   <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <link rel="stylesheet" type="text/css" href="testpage-style.css">
 </head>
 
 <body>
+<h1>pre</h1>
+<p class="white-space-pre">This line breaks here
+since the HTML code is formatted that way.
+       This line is indented since HTML is formatted this way. If the HTML was on one line, this would NEVER wrap to the next line at the end of the browser window. aaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaa
 
-  <div><p class="text-indent-section">Blah blah blah kdj s dlfjak jkd laksdjlkadj fk adlf asdjf lasjd flkajs dlfjalsd jflk asjdlkf jalsdk fjlasd fjla skdjf laskjdf lkasdj lj fk adlf asdjf lasjd flkajs dlfjalsd jflk asjdlkf jalsdk fjlasd fjla skdjf laskjdf lkasdj lj fk adlf asdjf lasjd flkajs dlfjalsd jflk asjdlkf jalsdk fjlasd fjla skdjf laskjdf lkasdj lj fk adlf asdjf lasjd flkajs dlfjalsd jflk asjdlkf jalsdk fjlasd fjla skdjf laskjdf lkasdj lj fk adlf asdjf lasjd flkajs dlfjalsd jflk asjdlkf jalsdk fjlasd fjla skdjf laskjdf lkasdj lj fk adlf asdjf lasjd flkajs dlfjalsd jflk asjdlkf jalsdk fjlasd fjla skdjf laskjdf lkasdj lj fk adlf asdjf lasjd flkajs dlfjalsd jflk asjdlkf jalsdk fjlasd fjla skdjf laskjdf lkasdj lf</p></div>
+line skipped in HTML <br>br tag here lf</p>
 
+<h1>pre-line</h1>
+<p class="white-space-pre-line">This line breaks here
+since the HTML code is formatted that way.
+       This line is NOT indented since indentations are not recongized with 'pre-line'. If the HTML was on one line, this would eventually wrap to the next line at the end of the browser window. aaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaa
 
+line skipped in HTML <br>br tag here lf</p>
 
+<h1>pre-wrap</h1>
+<p class="white-space-pre-wrap">This line breaks here
+since the HTML code is formatted that way.
+       This line is indented since HTML is formatted this way. If the HTML was on one line, this would eventually wrap to the next line at the end of the browser window. aaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaa
+
+line skipped in HTML <br>br tag here lf</p>
 </body>
-
 </html>

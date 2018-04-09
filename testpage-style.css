@@ -7,9 +7,9 @@
   background: rgba(76, 175, 80, 0.1);
 }
 
-body {
+/* body {
   background-image: url("images/backgrounds/aqua-gradient.jpg")
-}
+} */
 
 header {
   text-align: center;
@@ -595,21 +595,17 @@ ol.shorthand-for-custom-image {
 }
 
 .white-space-no-wrap {
-  color: white;
   white-space: nowrap;
 }
 
 .white-space-pre {
-  color: white;
   white-space: pre;
 }
 
 .white-space-pre-line {
-  color: white;
   white-space: pre-line;
 }
 
 .white-space-pre-wrap {
-  color: white;
   white-space: pre-wrap;
 }
