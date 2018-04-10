@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Overflow</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <a href="../index.html">Home page</a>
+        <header>
+            <h1>Overflow</h1>
+        </header>
+
+        <h2 class="heading-emphasis">The Overflow property</h2>
+<p>The overflow property controls what happens to content that is too big to fit into an area.</p>
+<p>Possible values are:</p>
+<ul>
+  <li>visible - Default. The overflow is not clipped. It renders outside the element's box</li>
+  <li>hidden - The overflow is clipped, and the rest of the content will be invisible</li>
+  <li>scroll - The overflow is clipped, but a scrollbar is added to see the rest of the content</li>
+  <li>auto - If overflow is clipped, a scrollbar should be added to see the rest of the content</li>
+</ul>
+
+<div class="alert alert-note">
+    <div class="alert-icon">
+        <img src="../images/note-icon.png" width="60" height="60">
+    </div>
+    <div class="alert-content">
+        <p>The overflow property only works for block elements with a specified height.</p>
+        <p>In OS X Lion (on Mac), scrollbars are hidden by default and only shown when being used (even though "overflow:scroll" is set).</p>
+<p>You can also use white-space or text-wrap to change how text is displayed in the box.</p>
+      </div></div>
+
+<h3 class="heading-emphasis">visible</h3>
+        <div class="example-container">
+            <div class="example-text">
+                <p>visible (default) - nothing is clipped. All text is 'visible'.</p>
+
+            </div>
+            <pre class="codebox"><span class="code-html">&lt;p&gt;Lots of text Lots of text Lots of text Lots of text
+blah blah blah yes yea eyahd asdlkjfd adkfjd kajd lfadkj fla djfal fad&lt;/p&gt;</span>
+
+<span class="code-css">p {
+  width: 200px;
+  height: 50px;
+  background-color: #eee;
+  overflow: visible;
+}</span></pre>
+
+<div class="example-text">
+    <p>example</p>
+</div>
+<div class="codebox"><p class="overflow-visible">Lots of text Lots of text Lots of text Lots of text
+  blah blah blah yes yea eyahd asdlkjfd adkfjd kajd lfadkj fla djfal fad</p>
+</div>
+ </div>
+
+ <h3 class="heading-emphasis">hidden</h3>
+         <div class="example-container">
+             <div class="example-text">
+                 <p>hidden - Any overflowing text is clipped and not visible.</p>
+
+             </div>
+             <pre class="codebox"><span class="code-html">&lt;p&gt;Lots of text Lots of text Lots of text Lots of text
+ blah blah blah yes yea eyahd asdlkjfd adkfjd kajd lfadkj fla djfal fad&lt;/p&gt;</span>
+
+ <span class="code-css">p {
+   width: 200px;
+   height: 50px;
+   background-color: #eee;
+   overflow: hidden;
+ }</span></pre>
+
+ <div class="example-text">
+     <p>example</p>
+ </div>
+ <div class="codebox"><p class="overflow-hidden">Lots of text Lots of text Lots of text Lots of text
+   blah blah blah yes yea eyahd asdlkjfd adkfjd kajd lfadkj fla djfal fad</p>
+ </div>
+  </div>
+
+
+
+
+
+
+  <h3 class="heading-emphasis">scroll</h3>
+          <div class="example-container">
+              <div class="example-text">
+                  <p>scroll - Any overflowing text is clipped, but a scrollbar is added to scroll inside the box.</p>
+                  <p>Note that this will add a scrollbar both horizontally and vertically (even if you do not need it).</p>
+
+              </div>
+              <pre class="codebox"><span class="code-html">&lt;p&gt;Line 1 Line 1 Line 1 Line 1 Line 1 Line 1 Line 1 Line 1 Line 1
+Line 2 Line 2 Line 2 Line 2 Line 2 Line 2 Line 2 Line 2 Line 2
+Line 3 Line 3  Line 3  Line 3  Line 3  Line 3  Line 3  Line 3  Line 3&lt;/p&gt;</span>
+
+  <span class="code-css">p {
+    width: 200px;
+    height: 50px;
+    background-color: #eee;
+    overflow: scroll;
+  }</span></pre>
+
+  <div class="example-text">
+      <p>example</p>
+  </div>
+  <div class="overflow-scroll">Line 1 Line 1 Line 1 Line 1 Line 1 Line 1 Line 1 Line 1 Line 1<br>
+Line 2 Line 2 Line 2 Line 2 Line 2 Line 2 Line 2 Line 2 Line 2<br>
+Line 3 Line 3  Line 3  Line 3  Line 3  Line 3  Line 3  Line 3  Line 3 </div>
+   </div>
+
+
+   <h3 class="heading-emphasis">scroll</h3>
+           <div class="example-container">
+               <div class="example-text">
+                   <p>auto - Similar to scroll in that a scrollbar is only added when needed.</p>
+                   <p class="red">Then what's the difference?</p>
+
+               </div>
+               <pre class="codebox"><span class="code-html">&lt;p&gt;Line 1 Line 1 Line 1 Line 1 Line 1 Line 1 Line 1 Line 1 Line 1
+   Line 2 Line 2 Line 2 Line 2 Line 2 Line 2 Line 2 Line 2 Line 2
+   Line 3 Line 3  Line 3  Line 3  Line 3  Line 3  Line 3  Line 3  Line 3&lt;/p&gt;</span>
+
+   <span class="code-css">p {
+     width: 200px;
+     height: 50px;
+     background-color: #eee;
+     overflow: auto;
+   }</span></pre>
+
+   <div class="example-text">
+       <p>example</p>
+   </div>
+   <div class="overflow-auto">Line 1 Line 1 Line 1 Line 1 Line 1 Line 1 Line 1 Line 1 Line 1<br>
+   Line 2 Line 2 Line 2 Line 2 Line 2 Line 2 Line 2 Line 2 Line 2<br>
+   Line 3 Line 3  Line 3  Line 3  Line 3  Line 3  Line 3  Line 3  Line 3 </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <h3 class="heading-emphasis">overflow-x and overflow-y</h3>
+    <p>These properties specify whether to change the overflow of content just horizontally or vertically (or both).</p>
+    <div class="alert alert-note">
+        <div class="alert-icon">
+            <img src="../images/note-icon.png" width="60" height="60">
+        </div>
+        <div class="alert-content">
+            <p>These are NOT used with the 'overflow' propety (which controls x and y). These are used on their own, or with each other.</p>
+          <p>You can use visible, hidden, scroll, and auto with these also.</p></div></div>
+
+                        <div class="example-container">
+                <div class="example-text">
+                  <p>This uses white-space: nowrap so you can see if the scroll bar appears horizontally.</p>
+                  <p>X is set to scroll while Y is hidden.</p>
+                </div>
+
+
+                <pre class="codebox"><span class="code-html">&lt;p&gt;Line 1 Line 1 Line 1 Line 1 Line 1 Line 1 Line 1 Line 1 Line 1
+    Line 2 Line 2 Line 2 Line 2 Line 2 Line 2 Line 2 Line 2 Line 2
+    Line 3 Line 3  Line 3  Line 3  Line 3  Line 3  Line 3  Line 3  Line 3&lt;/p&gt;</span>
+
+<span class="code-css">p {
+  width: 200px;
+  height: 50px;
+  background-color: #eee;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}</span></pre>
+
+    <div class="example-text">
+        <p>example</p>
+    </div>
+    <div class="overflow-xscroll">Line 1 Line 1 Line 1 Line 1 Line 1 Line 1 Line 1 Line 1 Line 1<br>
+    Line 2 Line 2 Line 2 Line 2 Line 2 Line 2 Line 2 Line 2 Line 2<br>
+    Line 3 Line 3  Line 3  Line 3  Line 3  Line 3  Line 3  Line 3  Line 3 </div>
+     </div>
+
+
+
+</body>
+
+</html>

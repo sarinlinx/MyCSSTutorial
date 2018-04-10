@@ -16,12 +16,15 @@ Common code to cut & paste
     <div class="example-text">
         <p>Text goes here</p>
     </div>
-  
+
     <pre class="codebox"><span class="code-html">CODE Here</span></pre>
 
 </div>
 
 
+
+NOTEBOX
+-------
 <div class="alert alert-note">
     <div class="alert-icon">
         <img src="../images/note-icon.png" width="60" height="60">

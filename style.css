@@ -184,6 +184,12 @@ ___________________________________________________*/
   padding: 10px 5px 10px 5px;
 }
 
+.codebox-no-overflow {
+  /*border: 1px solid white;*/
+  width: 48%;
+  background: #000;
+  padding: 10px 5px 10px 5px;
+}
 /*___________________________________________________
 Note boxes
 ___________________________________________________*/
@@ -691,4 +697,89 @@ ol.shorthand-for-custom-image {
 
 .first-last-type-pseudo-elements:last-of-type {
   color: blue;
+}
+
+.overflow-visible {
+  color: blue;
+  width: 200px;
+  height: 50px;
+  background-color: #eee;
+  overflow: visible;
+}
+
+.overflow-hidden {
+  color: blue;
+  width: 200px;
+  height: 50px;
+  background-color: #eee;
+  overflow: hidden;
+}
+
+.overflow-scroll {
+  color: blue;
+  width: 250px;
+  height: 100px;
+  background-color: #eee;
+  overflow: scroll;
+}
+
+.overflow-auto {
+  color: blue;
+  width: 250px;
+  height: 100px;
+  background-color: #eee;
+  overflow: auto;
+}
+
+.overflow-xscroll {
+  color: blue;
+  width: 250px;
+  height: 100px;
+  background-color: #eee;
+  overflow-x: scroll; /* Hide horizontal scrollbar */
+  overflow-y: hidden; /* Add vertical scrollbar */
+  white-space: nowrap;
+}
+
+.nthrow-table {
+  background-color: white;
+  border: 1px solid black;
+  margin: 5px;
+}
+
+.nthrow-table tr:nth-child(odd) {
+  background-color: gray;
+}
+
+.nthrow-table-number {
+  background-color: white;
+  border: 1px solid black;
+  margin: 5px;
+}
+
+.nthrow-table-number tr:nth-child(3) {
+  background-color: gray;
+}
+
+.beforeafter {
+  color: white;
+}
+
+.beforeafter::before {
+  content: "words for the pseudo selector ";
+  color: green;
+}
+
+.beforeafter-quotes {
+  color: white;
+}
+
+.beforeafter-quotes::before {
+  content: "\"";
+  color: red;
+}
+
+.beforeafter-quotes::after {
+  content: "\"";
+  color: red;
 }

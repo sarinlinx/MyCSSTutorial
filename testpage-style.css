@@ -1,6 +1,9 @@
-p:first-of-type {
+p::before {
+  content: "\"";
   color: red;
 }
-p:last-of-type {
-  color: blue;
+
+p::after {
+  content: "\"";
+  color: red;
 }

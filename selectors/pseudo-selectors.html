@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>CSS Selectors</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <a href="../index.html">Home page</a>
+        <header>
+            <h1>Advanced selectors</h1>
+        </header>
+
+
+<h1 class="heading-emphasis">Pseudo-Class Selectors</h1>
+<p>pseudo selectors are keywords added after a selector with a colon symbol.</p>
+
+<div class="example-container">
+    <div class="example-text">
+        <p>Change the color when hovering over a link.</p>
+    </div>
+    <pre class="codebox"><span class="code-css">a:hover {
+  color: green;
+}</span>
+
+<span class="pseudo-link-hover">Hover over this link to see it change to green.</span></pre>
+</div>
+
+
+
+<h1 class="heading-emphasis">Pseudo Element Selectors</h1>
+<p>pseudo element selectors select certain parts of element that are not part of the HTML.</p>
+<p>pseudo element selectors use double colon notation to differentiate between peseudo class selectors.</p>
+<p>NOTE: Older versions of CSS use a single colon. Modern browser will work with either.</p>
+
+<h2 class="heading-emphasis">::before and ::after</h2>
+<div class="example-container">
+    <div class="example-text">
+        <p>:before and :after	used in box-model-fix. They are also used to GENERATE elements inserted before or after the selected element</p>
+        <p>These generated elements do NOT become part of the HTML DOM.</p>
+        <p>These must always be used with the content property.</p>
+    </div>
+    <pre class="codebox"><span class="code-css">.someClass::before {
+  content: "words for the pseudo selector ";
+}</span>
+
+<span class="beforeafter">This is the normal text in the HTML.</span>
+</pre>
+</div>
+
+
+
+<h2 class="heading-emphasis">Using ::before and ::after to add quote marks</h2>
+<div class="example-container">
+    <div class="example-text">
+        <p>If you need to put quotes around quoted text, you just need to escape the double quote.</p>
+        <p>You could also put the double quote inside of single quotes , or use unicode '\201C'</p>
+    </div>
+    <pre class="codebox"><span class="code-css">.someClass::before {
+  color: red;
+  content: "\"";
+}
+
+.someClass::after {
+  color: red;
+  content: "\"";
+}</span>
+
+<span class="beforeafter-quotes">Red quotes are added.</span>
+</pre>
+</div>
+
+
+
+
+
+    </div>
+    <!--close example-container-->
+</body>
+
+</html>
