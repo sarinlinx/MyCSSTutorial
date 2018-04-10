@@ -33,6 +33,11 @@ h2.heading-emphasis {
   background: rgba(101, 149, 230, 0.2);
 }
 
+h3.heading-emphasis {
+  text-align: center;
+  background: rgba(101, 149, 230, 0.2);
+}
+
 .highlight-word {
   font-size: 22px;
   font-weight: bold;
@@ -612,4 +617,78 @@ ol.shorthand-for-custom-image {
 .white-space-pre-wrap {
   color: white;
   white-space: pre-wrap;
+}
+
+.text-overflow-clip {
+  text-overflow: clip;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 335px;
+  border: 1px solid #000000;
+}
+
+.text-overflow-ellipsis {
+  text-overflow: ellipsis;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 335px;
+  border: 1px solid #000000;
+}
+
+.text-decoration-overline {
+  color: white;
+  text-decoration: overline red;
+}
+
+.text-decoration-underline {
+  color: white;
+  text-decoration: underline green;
+}
+
+.text-decoration-line-through {
+  color: white;
+  text-decoration: line-through blue;
+}
+
+.descendent-selector-anchor-in-p {
+  color: red;
+}
+
+.descendent-selector-p-and-anchor-in-section {
+  color: blue;
+}
+
+.pseudo-link-hover {
+  color: white;
+}
+
+.pseudo-link-hover:hover {
+  color: green;
+}
+
+.first-last-child-pseudo-elements {
+  color: white;
+}
+
+.first-last-child-pseudo-elements:first-child {
+  color: red;
+}
+
+.first-last-child-pseudo-elements:last-child {
+  color: blue;
+}
+
+
+.first-last-type-pseudo-elements {
+  color: white;
+}
+
+.first-last-type-pseudo-elements:first-of-type {
+  color: red;
+}
+
+.first-last-type-pseudo-elements:last-of-type {
+  color: blue;
 }

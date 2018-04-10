@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>CSS Selectors</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <a href="../index.html">Home page</a>
+        <header>
+            <h1>Advanced selectors</h1>
+        </header>
+
+        <h1 class="heading-emphasis">Descendent selectors</h1>
+        <p>Use multiple selectors, separated by a space to match the descendent elements.</p>
+
+
+        <div class="example-container">
+            <div class="example-text">
+                <p>Example: Select a link in a paragraph and change the color to red.</p>
+            </div>
+            <pre class="codebox"><span class="code-html">&lt;p&gt;Please click &lt;a href="#"&gt;HERE!!!&lt;/a&gt;&lt;/p&gt;</span>
+
+<span class="code-css">p a {
+  color: red;
+}</span>
+
+<p class="white">Please click <a class="descendent-selector-anchor-in-p" href="#">HERE!!!</a></p></pre>
+        </div>
+        <!--end example-container-->
+
+        <h2 class="heading-emphasis">Multiple descendent selectors</h2>
+                <div class="example-container">
+            <div class="example-text">
+                <p>Select paragraphs and links inside &lt;section&gt;</p>
+            </div>
+            <pre class="codebox"><span class="code-html">&lt;section&gt;
+&lt;p&gt;Please click &lt;a href="#"&gt;HERE!!!&lt;/a&gt;&lt;/p&gt;
+&lt;/section&gt;</span>
+
+<span class="code-css">section p a {
+  color: blue;
+}</span>
+
+<section class="descendent-selector-p-and-anchor-in-section">
+<p>Please click <a href="#">HERE!!!</a></p>
+</section></pre>
+</div>
+
+
+<h1 class="heading-emphasis">Grouping selectors</h1>
+<p>Grouping selectors that share the same properties helps to simplify code.</p>
+
+
+<div class="example-container">
+    <div class="example-text">
+        <p>This will make the text for all h1, h2, and h3 tags red.</p>
+    </div>
+    <pre class="codebox"><span class="code-css">h1, h2, h3 {
+  color: red;
+}</span></pre>
+</div>
+<!--end example-container-->
+
+
+<h1 class="heading-emphasis">Pseudo-Class Selectors</h1>
+<p>pseudo selectors are keywords added after a selector with a colon symbol.</p>
+
+
+<div class="example-container">
+    <div class="example-text">
+        <p>Change the color when hovering over a link.</p>
+    </div>
+    <pre class="codebox"><span class="code-css">a:hover {
+  color: green;
+}</span>
+
+<span class="pseudo-link-hover">Hover over this link to see it change to green.</span></pre>
+</div>
+
+
+
+
+<h1 class="heading-emphasis">Selecting first and last children of parent elements</h1>
+<p>Apply a pseudo selector to a child element of a parent to specifically target that child.</p>
+<div class="alert alert-note">
+    <div class="alert-icon">
+        <img src="../images/note-icon.png" width="60" height="60">
+    </div>
+    <div class="alert-content">
+        <p>This must be added to the child element.</p></div></div>
+
+        <div class="example-container">
+    <div class="example-text">
+        <p>Select the first and last child elements from the parent.</p>
+        <p>NOTE how the first-child and last-child selectors are added to the child elements, not the parent.</p>
+
+    </div>
+    <pre class="codebox"><span class="code-html">&lt;section&gt;
+  &lt;p&gt;Paragraph&lt;/p&gt; &lt;!-- this is red --&gt;
+  &lt;p&gt;Paragraph&lt;/p&gt;
+  &lt;p&gt;Paragraph&lt;/p&gt; &lt;!-- this is blue --&gt;
+&lt;/section></span>
+
+<span class="code-css">p:first-child {
+  color: red;
+}
+p:last-child {
+  color: blue;
+}</span>
+
+<section>
+  <span class="first-last-child-pseudo-elements">Paragraph &lt;!-- this is red --&gt;</span>
+  <span class="first-last-child-pseudo-elements">Paragraph</span>
+  <span class="first-last-child-pseudo-elements">Paragraph &lt;!-- this is blue --&gt;</span>
+</section></pre>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<h1 class="heading-emphasis">Selecting first and last type from a parent element.</h1>
+<p>This is different from first-child last-child since it doesn't matter what order the HTML is in.</p>
+<p>The first type of the specified element will be selected.</p>
+
+        <div class="example-container">
+    <div class="example-text">
+        <p>Select the first and last paragraph elements in a parent.</p>
+        <p>Notice how the paragraph tags are not first or last inthe HTML, but this pseudo element allows you to target them since they are the first and last of that specific type of element.</p>
+    </div>
+    <pre class="codebox"><span class="code-html">&lt;section&gt;
+  &lt;h1&gt;heading&lt;/h1&gt;
+  &lt;p&gt;Paragraph&lt;/p&gt; &lt;!-- this is red --&gt;
+  &lt;p&gt;Paragraph&lt;/p&gt;
+  &lt;p&gt;Paragraph&lt;/p&gt; &lt;!-- this is blue --&gt;
+  &lt;a href="#"&gt;link&lt;/a&gt;
+&lt;/section&gt;</span>
+
+<span class="code-css">p:first-of-type {
+  color: red;
+}
+p:last-of-type {
+  color: blue;
+}</span>
+
+<section class="white">
+  <h1>heading</h1>
+  <span class="first-last-type-pseudo-elements">Paragraph</span> <!-- this is red -->
+  <span class="first-last-type-pseudo-elements">Paragraph</span>
+  <span class="first-last-type-pseudo-elements">Paragraph</span> <!-- this is blue -->
+  <a class="white" href="#">link</a>
+</section></pre>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <!--close example-container-->
+</body>
+
+</html>
